@@ -5,14 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta name="description" content="BMS STUDIO — Elite Roblox Development. Scripts, Features, Assets & Full Game Builds."/>
 <title>BMS STUDIO</title>
-
-<!-- Favicon / Tab Icon -->
 <link rel="icon" type="image/png" href="https://domain-kamu.com/logo-bms.png"/>
 <link rel="apple-touch-icon" href="https://domain-kamu.com/logo-bms.png"/>
-
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-
 <style>
 /* ══════════════════════════════════════════════
    CURSOR CUSTOM
@@ -280,8 +276,6 @@ section{padding:6rem 0}
 .hs:last-child{border-right:none}
 .hs-v{font-size:1.625rem;font-weight:800;color:var(--white);display:block;line-height:1;margin-bottom:3px}
 .hs-l{font-family:'JetBrains Mono',monospace;font-size:.5625rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em}
-
-/* Hero Visual */
 .hero-vis{position:relative;width:420px;height:420px;display:flex;align-items:center;justify-content:center}
 @media(max-width:980px){.hero-vis{display:none}}
 .vr{position:absolute;border-radius:50%;border:1px solid}
@@ -353,14 +347,8 @@ section{padding:6rem 0}
 ══════════════════════════════════════════════ */
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
 .feat{padding:1.75rem;position:relative;overflow:hidden}
-.feat-num{
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:700;
-  color:var(--text3);letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.125rem;
-}
-.feat-ic{
-  width:40px;height:40px;border-radius:11px;
-  display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:all .3s;
-}
+.feat-num{font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:700;color:var(--text3);letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.125rem}
+.feat-ic{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:all .3s}
 .fi1{background:rgba(75,232,192,0.06);border:1px solid rgba(75,232,192,0.1)}
 .fi2{background:rgba(124,108,240,0.06);border:1px solid rgba(124,108,240,0.1)}
 .fi3{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.1)}
@@ -375,10 +363,7 @@ section{padding:6rem 0}
 .card-h:hover .fi4{box-shadow:0 0 16px rgba(251,191,36,0.08)}
 .feat-t{font-size:.9375rem;font-weight:600;color:var(--white);margin-bottom:.4375rem}
 .feat-d{font-size:.8125rem;color:var(--text2);line-height:1.7;margin-bottom:.875rem}
-.feat-p{
-  font-family:'JetBrains Mono',monospace;font-size:.6875rem;color:var(--accent);
-  display:inline-flex;align-items:center;gap:4px;
-}
+.feat-p{font-family:'JetBrains Mono',monospace;font-size:.6875rem;color:var(--accent);display:inline-flex;align-items:center;gap:4px}
 
 /* ══════════════════════════════════════════════
    PORTFOLIO GRID
@@ -395,109 +380,46 @@ section{padding:6rem 0}
   background:linear-gradient(90deg,transparent,rgba(75,232,192,0.18),transparent);
   opacity:0;transition:opacity .35s;
 }
-.port-card:hover{
-  border-color:rgba(75,232,192,0.12);
-  transform:translateY(-5px) scale(1.005);
-  box-shadow:0 24px 56px rgba(0,0,0,0.45),0 0 0 1px rgba(75,232,192,0.04);
-}
+.port-card:hover{border-color:rgba(75,232,192,0.12);transform:translateY(-5px) scale(1.005);box-shadow:0 24px 56px rgba(0,0,0,0.45),0 0 0 1px rgba(75,232,192,0.04)}
 .port-card:hover::before{opacity:1}
-
-/* Product Image Area */
-.port-img{
-  height:190px;position:relative;overflow:hidden;
-  background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-}
-.port-img img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .5s ease,filter .5s ease;
-  filter:brightness(0.85);
-}
+.port-img{height:190px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.port-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .5s ease;filter:brightness(0.85)}
 .port-card:hover .port-img img{transform:scale(1.06);filter:brightness(1)}
-.port-img-placeholder{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:.625rem;width:100%;height:100%;
-  background:linear-gradient(135deg,rgba(75,232,192,0.02) 0%,rgba(124,108,240,0.02) 100%);
-}
-.port-img-placeholder svg{
-  width:36px;height:36px;
-  color:rgba(75,232,192,0.2);
-}
-.port-img-placeholder-label{
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;
-  color:var(--text3);letter-spacing:.12em;text-transform:uppercase;
-}
-.port-img-ov{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(10,13,22,.9) 0%,rgba(10,13,22,.15) 50%,transparent 100%);
-}
-.port-img-badges{
-  position:absolute;top:10px;left:10px;right:10px;
-  display:flex;justify-content:space-between;align-items:flex-start;
-}
+.port-img-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.625rem;width:100%;height:100%;background:linear-gradient(135deg,rgba(75,232,192,0.02) 0%,rgba(124,108,240,0.02) 100%)}
+.port-img-placeholder svg{width:36px;height:36px;color:rgba(75,232,192,0.2)}
+.port-img-placeholder-label{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase}
+.port-img-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,13,22,.9) 0%,rgba(10,13,22,.15) 50%,transparent 100%)}
+.port-img-badges{position:absolute;top:10px;left:10px;right:10px;display:flex;justify-content:space-between;align-items:flex-start}
 .port-badges{display:flex;gap:4px;flex-wrap:wrap}
-.bdg{
-  display:inline-flex;align-items:center;gap:3px;
-  padding:3px 7px;border-radius:100px;
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:600;border:1px solid;
-}
+.bdg{display:inline-flex;align-items:center;gap:3px;padding:3px 7px;border-radius:100px;font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:600;border:1px solid}
 .bdg svg{width:7px;height:7px}
 .ba{color:var(--accent);background:rgba(75,232,192,0.06);border-color:rgba(75,232,192,0.15)}
 .bp{color:var(--purple);background:rgba(124,108,240,0.06);border-color:rgba(124,108,240,0.15)}
 .bg{color:var(--green);background:rgba(52,211,153,0.06);border-color:rgba(52,211,153,0.15)}
 .by{color:var(--amber);background:rgba(251,191,36,0.06);border-color:rgba(251,191,36,0.15)}
 .bd{color:var(--text2);background:rgba(125,134,154,0.06);border-color:rgba(125,134,154,0.12)}
-
 .port-body{padding:1.25rem;flex:1;display:flex;flex-direction:column;gap:.625rem}
 .port-name{font-size:.9375rem;font-weight:600;color:var(--white);line-height:1.35;transition:color .2s}
 .port-card:hover .port-name{color:var(--accent)}
-.port-desc{
-  font-size:.8125rem;color:var(--text2);line-height:1.65;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-}
+.port-desc{font-size:.8125rem;color:var(--text2);line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .port-tags{display:flex;flex-wrap:wrap;gap:4px}
-.ptag{
-  padding:2px 7px;border-radius:100px;
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;
-  background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);color:var(--text3);
-}
-.port-foot{
-  display:flex;align-items:flex-end;justify-content:space-between;
-  margin-top:auto;padding-top:.625rem;border-top:1px solid rgba(255,255,255,0.04);
-}
+.ptag{padding:2px 7px;border-radius:100px;font-family:'JetBrains Mono',monospace;font-size:.5rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);color:var(--text3)}
+.port-foot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;padding-top:.625rem;border-top:1px solid rgba(255,255,255,0.04)}
 .port-price{font-size:1.25rem;font-weight:800;color:var(--white);line-height:1}
 .port-usd{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text3);margin-top:2px}
-.btn-order{
-  display:inline-flex;align-items:center;gap:5px;
-  padding:7px 14px;border-radius:9px;
-  background:var(--accent);color:#06080e;
-  font-family:'Inter',sans-serif;font-size:.75rem;font-weight:700;
-  border:none;cursor:none;transition:all .22s;flex-shrink:0;
-}
+.btn-order{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:9px;background:var(--accent);color:#06080e;font-family:'Inter',sans-serif;font-size:.75rem;font-weight:700;border:none;cursor:none;transition:all .22s;flex-shrink:0}
 .btn-order:hover{background:#6bf0d0;box-shadow:0 0 16px rgba(75,232,192,0.2);transform:scale(1.03)}
 .btn-order:active{transform:scale(.97)}
 .btn-order svg{width:11px;height:11px}
 
-/* ══════════════════════════════════════════════
-   FILTER TABS
-══════════════════════════════════════════════ */
+/* FILTER TABS */
 .filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2rem}
-.f-btn{
-  padding:6px 14px;border-radius:100px;font-size:.75rem;font-weight:500;
-  background:transparent;border:1px solid var(--border);color:var(--text2);
-  cursor:none;transition:all .2s;font-family:'Inter',sans-serif;
-}
+.f-btn{padding:6px 14px;border-radius:100px;font-size:.75rem;font-weight:500;background:transparent;border:1px solid var(--border);color:var(--text2);cursor:none;transition:all .2s;font-family:'Inter',sans-serif}
 .f-btn:hover{border-color:rgba(75,232,192,0.2);color:var(--text)}
 .f-btn.on{background:rgba(75,232,192,0.08);border-color:rgba(75,232,192,0.2);color:var(--accent)}
 
-/* ══════════════════════════════════════════════
-   STATS
-══════════════════════════════════════════════ */
-.stats{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  border:1px solid var(--border);border-radius:var(--r);
-  overflow:hidden;background:var(--surface);
-}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--surface)}
 @media(max-width:580px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{padding:2rem 1.5rem;border-right:1px solid var(--border);text-align:center;transition:background .3s}
 .stat:last-child{border-right:none}
@@ -505,91 +427,43 @@ section{padding:6rem 0}
 .stat-v{font-size:2rem;font-weight:800;color:var(--white);display:block;line-height:1;margin-bottom:5px}
 .stat-l{font-family:'JetBrains Mono',monospace;font-size:.5625rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em}
 
-/* ══════════════════════════════════════════════
-   CTA
-══════════════════════════════════════════════ */
-.cta{
-  border-radius:20px;padding:4rem 3rem;text-align:center;
-  position:relative;overflow:hidden;background:var(--bg1);border:1px solid var(--border);
-}
-.cta::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 55% 50% at 50% 0%,rgba(75,232,192,0.035) 0%,transparent 70%);
-  pointer-events:none;
-}
+/* CTA */
+.cta{border-radius:20px;padding:4rem 3rem;text-align:center;position:relative;overflow:hidden;background:var(--bg1);border:1px solid var(--border)}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 50% 0%,rgba(75,232,192,0.035) 0%,transparent 70%);pointer-events:none}
 .cta-btns{display:flex;align-items:center;justify-content:center;gap:.75rem;flex-wrap:wrap;margin-top:1.75rem}
 @media(max-width:580px){.cta{padding:3rem 1.5rem}}
 
-/* ══════════════════════════════════════════════
-   PAGE TOP
-══════════════════════════════════════════════ */
+/* PAGE TOP */
 .ptop{padding:7.5rem 0 3rem;border-bottom:1px solid var(--border);margin-bottom:3.5rem}
 .ptop-desc{font-size:1rem;color:var(--text2);line-height:1.75;max-width:480px;margin-top:.75rem}
 
-/* ══════════════════════════════════════════════
-   SERVICES
-══════════════════════════════════════════════ */
+/* SERVICES */
 .srv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin-bottom:3.5rem}
-.srv-card{
-  display:flex;flex-direction:column;overflow:hidden;
-  background:var(--surface);backdrop-filter:blur(20px);
-  border:1px solid var(--border);border-radius:var(--r);
-  transition:all .35s;position:relative;
-}
-.srv-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(75,232,192,0.2),transparent);
-  opacity:0;transition:opacity .35s;
-}
-.srv-card:hover{
-  border-color:rgba(75,232,192,0.12);
-  box-shadow:0 24px 56px rgba(0,0,0,0.45);
-  transform:translateY(-4px);
-}
+.srv-card{display:flex;flex-direction:column;overflow:hidden;background:var(--surface);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:var(--r);transition:all .35s;position:relative}
+.srv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(75,232,192,0.2),transparent);opacity:0;transition:opacity .35s}
+.srv-card:hover{border-color:rgba(75,232,192,0.12);box-shadow:0 24px 56px rgba(0,0,0,0.45);transform:translateY(-4px)}
 .srv-card:hover::before{opacity:1}
-.srv-img{
-  height:160px;position:relative;overflow:hidden;
-  background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-}
+.srv-img{height:160px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .srv-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .5s;filter:brightness(0.8)}
 .srv-card:hover .srv-img img{transform:scale(1.05);filter:brightness(1)}
-.srv-img-ph{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:.75rem;width:100%;height:100%;
-}
-.srv-img-ic{
-  width:52px;height:52px;border-radius:14px;
-  display:flex;align-items:center;justify-content:center;
-  transition:all .3s;
-}
+.srv-img-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;width:100%;height:100%}
+.srv-img-ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;transition:all .3s}
 .srv-card:hover .srv-img-ic{transform:scale(1.1)}
-.srv-img-ov{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(10,13,22,.85) 0%,transparent 60%);
-}
+.srv-img-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,13,22,.85) 0%,transparent 60%)}
 .srv-body{padding:1.375rem;flex:1;display:flex;flex-direction:column;gap:.5rem}
 .srv-name{font-size:1rem;font-weight:600;color:var(--white);transition:color .2s}
 .srv-card:hover .srv-name{color:var(--accent)}
 .srv-desc{font-size:.8125rem;color:var(--text2);line-height:1.65;flex:1}
-.srv-meta{
-  display:flex;align-items:center;justify-content:space-between;
-  padding-top:.75rem;border-top:1px solid rgba(255,255,255,0.04);margin-top:auto;
-}
+.srv-meta{display:flex;align-items:center;justify-content:space-between;padding-top:.75rem;border-top:1px solid rgba(255,255,255,0.04);margin-top:auto}
 .srv-price{font-size:1.125rem;font-weight:800;color:var(--white)}
 .srv-from{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text3)}
 
-/* Tiers */
+/* TIERS */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
 @media(max-width:840px){.tiers{grid-template-columns:1fr}}
 .tier{padding:1.875rem;position:relative;overflow:hidden}
 .tier.ft{border-color:rgba(75,232,192,0.16);background:rgba(14,18,32,0.95)}
-.tier.ft::after{
-  content:'POPULAR';position:absolute;top:1.125rem;right:1.125rem;
-  font-family:'JetBrains Mono',monospace;font-size:.4375rem;font-weight:700;
-  letter-spacing:.15em;color:#06080e;background:var(--accent);
-  padding:2px 7px;border-radius:100px;
-}
+.tier.ft::after{content:'POPULAR';position:absolute;top:1.125rem;right:1.125rem;font-family:'JetBrains Mono',monospace;font-size:.4375rem;font-weight:700;letter-spacing:.15em;color:#06080e;background:var(--accent);padding:2px 7px;border-radius:100px}
 .tier-name{font-family:'JetBrains Mono',monospace;font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-bottom:.625rem}
 .tier.ft .tier-name{color:var(--accent)}
 .tier-price{font-size:2rem;font-weight:800;color:var(--white);line-height:1;margin-bottom:3px}
@@ -599,16 +473,11 @@ section{padding:6rem 0}
 .tier-li{display:flex;align-items:center;gap:7px;font-size:.8125rem;color:var(--text2)}
 .tier-li svg{width:13px;height:13px;color:var(--green);flex-shrink:0}
 
-/* ══════════════════════════════════════════════
-   ABOUT
-══════════════════════════════════════════════ */
+/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
 @media(max-width:720px){.about-grid{grid-template-columns:1fr}}
 .term{background:rgba(6,8,14,0.95);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-.term-bar{
-  display:flex;align-items:center;gap:5px;
-  padding:9px 14px;background:rgba(255,255,255,0.015);border-bottom:1px solid var(--border);
-}
+.term-bar{display:flex;align-items:center;gap:5px;padding:9px 14px;background:rgba(255,255,255,0.015);border-bottom:1px solid var(--border)}
 .td{width:9px;height:9px;border-radius:50%}
 .tdr{background:#ff5f57}.tdy{background:#febc2e}.tdg{background:#28c840}
 .term-title{font-family:'JetBrains Mono',monospace;font-size:.5625rem;color:var(--text3);margin-left:auto}
@@ -618,10 +487,7 @@ section{padding:6rem 0}
 .tcur{display:inline-block;width:7px;height:14px;background:var(--accent);vertical-align:text-bottom;animation:blink 1.2s ease-in-out infinite}
 .promise{display:flex;flex-direction:column;gap:.875rem;margin-top:1.25rem}
 .pr-item{display:flex;align-items:flex-start;gap:.875rem}
-.pr-ic{
-  width:30px;height:30px;border-radius:8px;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;
-}
+.pr-ic{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .pr-ic svg{width:13px;height:13px}
 .pia{background:rgba(75,232,192,0.06);border:1px solid rgba(75,232,192,0.1)}.pia svg{color:var(--accent)}
 .pib{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.1)}.pib svg{color:var(--green)}
@@ -629,9 +495,7 @@ section{padding:6rem 0}
 .pr-t{font-size:.875rem;font-weight:600;color:var(--white);margin-bottom:2px}
 .pr-d{font-size:.8125rem;color:var(--text2);line-height:1.65}
 
-/* ══════════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════════ */
+/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2.25rem 0;position:relative;z-index:2}
 .foot-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 .foot-copy{font-family:'JetBrains Mono',monospace;font-size:.625rem;color:var(--text3)}
@@ -641,54 +505,27 @@ footer{border-top:1px solid var(--border);padding:2.25rem 0;position:relative;z-
 .foot-link{padding:4px 8px;border-radius:6px;font-size:.6875rem;color:var(--text3);background:none;border:none;cursor:none;font-family:'Inter',sans-serif;transition:color .2s}
 .foot-link:hover{color:var(--text)}
 
-/* ══════════════════════════════════════════════
-   ANIMATION
-══════════════════════════════════════════════ */
+/* ANIMATION */
 @keyframes rv{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .rv{animation:rv .5s cubic-bezier(.22,1,.36,1) both}
 .d1{animation-delay:.06s}.d2{animation-delay:.12s}.d3{animation-delay:.18s}.d4{animation-delay:.24s}
 @media(max-width:580px){section{padding:4rem 0}.hero-stats{gap:1.25rem}.hs{padding:0 1rem}}
 
-/* ══════════════════════════════════════════════
-   GLITCH TITLE EFFECT
-══════════════════════════════════════════════ */
-@keyframes glitch1{
-  0%,90%,100%{clip-path:inset(0 0 100% 0);transform:translateX(0)}
-  92%{clip-path:inset(10% 0 60% 0);transform:translateX(-4px)}
-  94%{clip-path:inset(40% 0 30% 0);transform:translateX(4px)}
-  96%{clip-path:inset(70% 0 10% 0);transform:translateX(-2px)}
-  98%{clip-path:inset(20% 0 50% 0);transform:translateX(2px)}
-}
-@keyframes glitch2{
-  0%,90%,100%{clip-path:inset(0 0 100% 0);transform:translateX(0)}
-  92%{clip-path:inset(30% 0 40% 0);transform:translateX(3px)}
-  94%{clip-path:inset(60% 0 20% 0);transform:translateX(-3px)}
-  96%{clip-path:inset(10% 0 70% 0);transform:translateX(2px)}
-  98%{clip-path:inset(50% 0 10% 0);transform:translateX(-2px)}
-}
+/* GLITCH */
+@keyframes glitch1{0%,90%,100%{clip-path:inset(0 0 100% 0);transform:translateX(0)}92%{clip-path:inset(10% 0 60% 0);transform:translateX(-4px)}94%{clip-path:inset(40% 0 30% 0);transform:translateX(4px)}96%{clip-path:inset(70% 0 10% 0);transform:translateX(-2px)}98%{clip-path:inset(20% 0 50% 0);transform:translateX(2px)}}
+@keyframes glitch2{0%,90%,100%{clip-path:inset(0 0 100% 0);transform:translateX(0)}92%{clip-path:inset(30% 0 40% 0);transform:translateX(3px)}94%{clip-path:inset(60% 0 20% 0);transform:translateX(-3px)}96%{clip-path:inset(10% 0 70% 0);transform:translateX(2px)}98%{clip-path:inset(50% 0 10% 0);transform:translateX(-2px)}}
 .glitch-wrap{position:relative;display:inline-block}
-.glitch-wrap::before,.glitch-wrap::after{
-  content:attr(data-text);position:absolute;top:0;left:0;width:100%;
-  font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;
-  pointer-events:none;
-}
+.glitch-wrap::before,.glitch-wrap::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;pointer-events:none}
 .glitch-wrap::before{color:#f0f;animation:glitch1 6s infinite;opacity:.5}
 .glitch-wrap::after{color:#0ff;animation:glitch2 6s infinite .2s;opacity:.5}
 
-<!-- Tambahkan CSS ini ke dalam <style> di website BMS STUDIO -->
-<style>
 /* ══════════════════════════════════════════════
-   CS WIDGET STYLES
+   CS WIDGET
 ══════════════════════════════════════════════ */
-
-/* Hide default cursor on widget elements */
-#cs-widget *{cursor:none}
-
-/* Floating Button */
 #cs-fab{
   position:fixed;bottom:1.75rem;right:1.75rem;z-index:9000;
   width:56px;height:56px;border-radius:50%;
-  background:var(--accent);border:none;
+  background:var(--accent);border:none;cursor:none;
   display:flex;align-items:center;justify-content:center;
   box-shadow:0 4px 24px rgba(75,232,192,0.35),0 0 0 0 rgba(75,232,192,0.2);
   transition:all .3s cubic-bezier(.34,1.56,.64,1);
@@ -699,21 +536,12 @@ footer{border-top:1px solid var(--border);padding:2.25rem 0;position:relative;z-
   50%{box-shadow:0 4px 32px rgba(75,232,192,0.5),0 0 0 12px rgba(75,232,192,0)}
 }
 #cs-fab:hover{transform:scale(1.1) translateY(-2px);background:#6bf0d0}
-#cs-fab.open{transform:scale(1) rotate(0deg);animation:none;background:rgba(75,232,192,0.15);border:1px solid rgba(75,232,192,0.3)}
-#cs-fab svg{width:22px;height:22px;color:#06080e;transition:all .3s}
+#cs-fab.open{transform:scale(1);animation:none;background:rgba(75,232,192,0.15);border:1px solid rgba(75,232,192,0.3)}
+#cs-fab svg{width:22px;height:22px;color:#06080e;transition:all .3s;position:absolute}
 #cs-fab.open svg{color:var(--accent)}
-
-/* Notification dot */
-#cs-fab-dot{
-  position:absolute;top:2px;right:2px;
-  width:12px;height:12px;border-radius:50%;
-  background:var(--green);border:2px solid var(--bg);
-  animation:blink 2.5s ease-in-out infinite;
-}
-
-/* Panel */
+#cs-fab-dot{position:absolute;top:2px;right:2px;width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--bg);animation:blink 2.5s ease-in-out infinite;z-index:1}
 #cs-panel{
-  position:fixed;bottom:5.5rem;right:1.75rem;z-index:9000;
+  position:fixed;bottom:5.5rem;right:1.75rem;z-index:8999;
   width:380px;height:580px;
   background:rgba(6,8,14,0.97);
   border:1px solid var(--border);border-radius:20px;
@@ -724,782 +552,72 @@ footer{border-top:1px solid var(--border);padding:2.25rem 0;position:relative;z-
   backdrop-filter:blur(24px);
 }
 #cs-panel.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
-
-/* Panel top shimmer */
-#cs-panel::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(75,232,192,0.25),transparent);
-  z-index:1;
-}
-
-/* Header */
-#cs-header{
-  padding:1rem 1.125rem;
-  background:rgba(10,13,22,0.98);
-  border-bottom:1px solid var(--border);
-  flex-shrink:0;position:relative;z-index:2;
-}
+#cs-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(75,232,192,0.25),transparent);z-index:1}
+#cs-header{padding:1rem 1.125rem;background:rgba(10,13,22,0.98);border-bottom:1px solid var(--border);flex-shrink:0;position:relative;z-index:2}
 .cs-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.625rem}
 .cs-brand{display:flex;align-items:center;gap:.625rem}
-.cs-logo{
-  width:32px;height:32px;border-radius:9px;
-  background:rgba(75,232,192,0.07);border:1px solid rgba(75,232,192,0.14);
-  display:flex;align-items:center;justify-content:center;
-}
+.cs-logo{width:32px;height:32px;border-radius:9px;background:rgba(75,232,192,0.07);border:1px solid rgba(75,232,192,0.14);display:flex;align-items:center;justify-content:center}
 .cs-logo svg{width:14px;height:14px;color:var(--accent)}
 .cs-brand-name{font-size:.8125rem;font-weight:700;color:var(--white)}
 .cs-brand-name span{color:var(--accent)}
-.cs-close{
-  background:none;border:none;color:var(--text3);
-  padding:4px;border-radius:6px;transition:all .2s;
-  display:flex;align-items:center;justify-content:center;
-}
+.cs-close{background:none;border:none;color:var(--text3);padding:4px;border-radius:6px;transition:all .2s;display:flex;align-items:center;justify-content:center;cursor:none}
 .cs-close:hover{color:var(--text);background:rgba(255,255,255,0.05)}
 .cs-close svg{width:15px;height:15px}
-
-/* Agent selector */
 .cs-agents{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
 .cs-agents::-webkit-scrollbar{height:2px}
 .cs-agents::-webkit-scrollbar-thumb{background:rgba(75,232,192,0.2);border-radius:2px}
-.cs-agent{
-  display:flex;align-items:center;gap:5px;
-  padding:4px 10px;border-radius:100px;
-  background:rgba(255,255,255,0.02);border:1px solid var(--border);
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:600;
-  color:var(--text3);white-space:nowrap;transition:all .2s;flex-shrink:0;
-}
+.cs-agent{display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,0.02);border:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:600;color:var(--text3);white-space:nowrap;transition:all .2s;flex-shrink:0;cursor:none}
 .cs-agent:hover{border-color:rgba(75,232,192,0.2);color:var(--text2)}
 .cs-agent.on{background:rgba(75,232,192,0.07);border-color:rgba(75,232,192,0.2);color:var(--accent)}
-.cs-agent-dot{
-  width:5px;height:5px;border-radius:50%;
-  background:var(--green);animation:blink 2.5s ease-in-out infinite;
-}
+.cs-agent-dot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 2.5s ease-in-out infinite}
 .cs-agent-icon{font-size:.6875rem}
-
-/* Status bar */
-.cs-status{
-  display:flex;align-items:center;gap:5px;
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text3);
-  padding-top:.5rem;border-top:1px solid rgba(255,255,255,0.03);margin-top:.5rem;
-}
+.cs-status{display:flex;align-items:center;gap:5px;font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text3);padding-top:.5rem;border-top:1px solid rgba(255,255,255,0.03);margin-top:.5rem}
 .cs-status-dot{width:4px;height:4px;border-radius:50%;background:var(--green);box-shadow:0 0 4px var(--green);animation:blink 2.5s infinite}
-
-/* Messages */
-#cs-messages{
-  flex:1;overflow-y:auto;padding:1rem;
-  display:flex;flex-direction:column;gap:.75rem;
-}
+#cs-messages{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.75rem}
 #cs-messages::-webkit-scrollbar{width:2px}
 #cs-messages::-webkit-scrollbar-thumb{background:rgba(75,232,192,0.15);border-radius:2px}
-
 .cs-msg{display:flex;gap:.625rem;align-items:flex-start;animation:rv .3s ease both}
-
-/* Bot message */
-.cs-msg.bot .cs-avatar{
-  width:28px;height:28px;border-radius:8px;
-  background:rgba(75,232,192,0.07);border:1px solid rgba(75,232,192,0.12);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;font-size:.875rem;margin-top:2px;
-}
-.cs-msg.bot .cs-bubble{
-  background:rgba(14,18,32,0.9);
-  border:1px solid var(--border);
-  border-radius:4px 12px 12px 12px;
-  padding:.625rem .875rem;
-  font-size:.8125rem;color:var(--text);line-height:1.65;
-  max-width:280px;position:relative;
-}
-.cs-msg.bot .cs-bubble::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,rgba(75,232,192,0.15),transparent);
-  border-radius:12px 12px 0 0;
-}
-.cs-sender{
-  font-family:'JetBrains Mono',monospace;font-size:.5rem;
-  color:var(--accent);margin-bottom:3px;display:block;
-}
-
-/* User message */
+.cs-msg.bot .cs-avatar{width:28px;height:28px;border-radius:8px;background:rgba(75,232,192,0.07);border:1px solid rgba(75,232,192,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.875rem;margin-top:2px}
+.cs-msg.bot .cs-bubble{background:rgba(14,18,32,0.9);border:1px solid var(--border);border-radius:4px 12px 12px 12px;padding:.625rem .875rem;font-size:.8125rem;color:var(--text);line-height:1.65;max-width:280px;position:relative}
+.cs-msg.bot .cs-bubble::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,rgba(75,232,192,0.15),transparent);border-radius:12px 12px 0 0}
+.cs-sender{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--accent);margin-bottom:3px;display:block}
 .cs-msg.user{flex-direction:row-reverse}
-.cs-msg.user .cs-bubble{
-  background:rgba(75,232,192,0.08);
-  border:1px solid rgba(75,232,192,0.12);
-  border-radius:12px 4px 12px 12px;
-  padding:.625rem .875rem;
-  font-size:.8125rem;color:var(--white);line-height:1.65;
-  max-width:260px;
-}
-
-/* Typing indicator */
+.cs-msg.user .cs-bubble{background:rgba(75,232,192,0.08);border:1px solid rgba(75,232,192,0.12);border-radius:12px 4px 12px 12px;padding:.625rem .875rem;font-size:.8125rem;color:var(--white);line-height:1.65;max-width:260px}
 .cs-typing{display:flex;align-items:center;gap:3px;padding:.5rem .75rem}
-.cs-typing span{
-  width:5px;height:5px;border-radius:50%;
-  background:var(--accent);opacity:.4;
-  animation:cs-dot .9s ease-in-out infinite;
-}
+.cs-typing span{width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.4;animation:cs-dot .9s ease-in-out infinite}
 .cs-typing span:nth-child(2){animation-delay:.15s}
 .cs-typing span:nth-child(3){animation-delay:.3s}
 @keyframes cs-dot{0%,60%,100%{opacity:.4;transform:scale(1)}30%{opacity:1;transform:scale(1.3)}}
-
-/* Quick replies */
-#cs-quick{
-  padding:.625rem 1rem;display:flex;gap:5px;flex-wrap:wrap;
-  border-top:1px solid var(--border);flex-shrink:0;
-  background:rgba(8,11,20,0.9);
-}
-.cs-qr{
-  padding:4px 10px;border-radius:100px;
-  font-size:.6875rem;color:var(--text2);
-  background:rgba(255,255,255,0.02);border:1px solid var(--border);
-  transition:all .2s;white-space:nowrap;font-family:'Inter',sans-serif;
-}
+#cs-quick{padding:.625rem 1rem;display:flex;gap:5px;flex-wrap:wrap;border-top:1px solid var(--border);flex-shrink:0;background:rgba(8,11,20,0.9)}
+.cs-qr{padding:4px 10px;border-radius:100px;font-size:.6875rem;color:var(--text2);background:rgba(255,255,255,0.02);border:1px solid var(--border);transition:all .2s;white-space:nowrap;font-family:'Inter',sans-serif;cursor:none}
 .cs-qr:hover{border-color:rgba(75,232,192,0.2);color:var(--accent);background:rgba(75,232,192,0.04)}
-
-/* Input area */
-#cs-foot{
-  padding:.75rem 1rem;border-top:1px solid var(--border);
-  background:rgba(8,11,20,0.95);flex-shrink:0;
-}
-.cs-input-wrap{
-  display:flex;align-items:flex-end;gap:.5rem;
-  background:rgba(14,18,32,0.9);border:1px solid var(--border);
-  border-radius:12px;padding:.5rem .625rem;transition:border-color .2s;
-}
+#cs-foot{padding:.75rem 1rem;border-top:1px solid var(--border);background:rgba(8,11,20,0.95);flex-shrink:0}
+.cs-input-wrap{display:flex;align-items:flex-end;gap:.5rem;background:rgba(14,18,32,0.9);border:1px solid var(--border);border-radius:12px;padding:.5rem .625rem;transition:border-color .2s}
 .cs-input-wrap:focus-within{border-color:rgba(75,232,192,0.2)}
-#cs-input{
-  flex:1;background:none;border:none;outline:none;
-  color:var(--white);font-family:'Inter',sans-serif;font-size:.8125rem;
-  resize:none;line-height:1.5;max-height:80px;min-height:20px;
-}
+#cs-input{flex:1;background:none;border:none;outline:none;color:var(--white);font-family:'Inter',sans-serif;font-size:.8125rem;resize:none;line-height:1.5;max-height:80px;min-height:20px;cursor:none}
 #cs-input::placeholder{color:var(--text3)}
-#cs-send{
-  width:28px;height:28px;border-radius:8px;
-  background:var(--accent);border:none;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  transition:all .2s;
-}
+#cs-send{width:28px;height:28px;border-radius:8px;background:var(--accent);border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;cursor:none}
 #cs-send:hover{background:#6bf0d0;box-shadow:0 0 12px rgba(75,232,192,0.2)}
 #cs-send:disabled{background:var(--bg3);opacity:.5}
 #cs-send svg{width:12px;height:12px;color:#06080e}
-.cs-foot-meta{
-  display:flex;align-items:center;justify-content:space-between;
-  margin-top:.375rem;
-}
+.cs-foot-meta{display:flex;align-items:center;justify-content:space-between;margin-top:.375rem}
 .cs-foot-hint{font-family:'JetBrains Mono',monospace;font-size:.45rem;color:var(--text3)}
-.cs-model-badge{
-  font-family:'JetBrains Mono',monospace;font-size:.4375rem;
-  color:var(--text3);background:rgba(255,255,255,0.02);
-  border:1px solid rgba(255,255,255,0.04);padding:2px 6px;border-radius:4px;
-}
-
-/* Welcome card */
-.cs-welcome{
-  background:rgba(75,232,192,0.03);
-  border:1px solid rgba(75,232,192,0.08);
-  border-radius:12px;padding:1rem;margin-bottom:.25rem;
-}
-.cs-welcome-title{font-size:.875rem;font-weight:700;color:var(--white);margin-bottom:.375rem}
-.cs-welcome-sub{font-size:.75rem;color:var(--text2);line-height:1.6;margin-bottom:.625rem}
-.cs-welcome-items{display:flex;flex-direction:column;gap:.3rem}
-.cs-welcome-item{
-  display:flex;align-items:center;gap:.5rem;
-  font-size:.6875rem;color:var(--text2);
-}
-.cs-welcome-item svg{width:10px;height:10px;color:var(--green);flex-shrink:0}
-
-/* Markdown-like formatting */
+.cs-model-badge{font-family:'JetBrains Mono',monospace;font-size:.4375rem;color:var(--text3);background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);padding:2px 6px;border-radius:4px}
 .cs-bubble strong{color:var(--white);font-weight:600}
 .cs-bubble em{color:var(--accent);font-style:normal}
-.cs-bubble code{
-  font-family:'JetBrains Mono',monospace;font-size:.6875rem;
-  background:rgba(255,255,255,0.05);padding:1px 5px;border-radius:4px;color:var(--accent);
-}
+.cs-bubble code{font-family:'JetBrains Mono',monospace;font-size:.6875rem;background:rgba(255,255,255,0.05);padding:1px 5px;border-radius:4px;color:var(--accent)}
 .cs-bubble ul{padding-left:1rem;margin:.25rem 0}
 .cs-bubble li{margin:.15rem 0;font-size:.8125rem}
-.cs-bubble a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
-
-/* Responsive */
-@media(max-width:500px){
-  #cs-panel{width:calc(100vw - 2rem);right:1rem;left:1rem;bottom:5rem}
-  #cs-fab{bottom:1.25rem;right:1.25rem}
-}
-</style>
-
-<!-- Tambahkan HTML ini sebelum </body> di website BMS STUDIO -->
-
-<!-- CS FAB Button -->
-<button id="cs-fab" onclick="toggleCS()" title="Chat with BMS Support">
-  <div id="cs-fab-dot"></div>
-  <svg id="cs-icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-  </svg>
-  <svg id="cs-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none;position:absolute">
-    <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-  </svg>
-</button>
-
-<!-- CS Panel -->
-<div id="cs-panel">
-
-  <!-- Header -->
-  <div id="cs-header">
-    <div class="cs-header-top">
-      <div class="cs-brand">
-        <div class="cs-logo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
-        </div>
-        <div>
-          <div class="cs-brand-name">BMS <span>SUPPORT</span></div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:.4rem;color:var(--text3);letter-spacing:.15em;text-transform:uppercase">Customer Service</div>
-        </div>
-      </div>
-      <button class="cs-close" onclick="toggleCS()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Agent Tabs -->
-    <div class="cs-agents" id="cs-agent-tabs"></div>
-
-    <!-- Status -->
-    <div class="cs-status">
-      <div class="cs-status-dot"></div>
-      <span id="cs-status-text">Team online · Biasanya membalas dalam beberapa detik</span>
-    </div>
-  </div>
-
-  <!-- Messages -->
-  <div id="cs-messages"></div>
-
-  <!-- Quick Replies -->
-  <div id="cs-quick"></div>
-
-  <!-- Footer / Input -->
-  <div id="cs-foot">
-    <div class="cs-input-wrap">
-      <textarea
-        id="cs-input"
-        placeholder="Tulis pesan kamu..."
-        rows="1"
-        onkeydown="csKeyDown(event)"
-        oninput="csAutoResize(this)"
-      ></textarea>
-      <button id="cs-send" onclick="csSend()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="m22 2-7 20-4-9-9-4 20-7z"/>
-        </svg>
-      </button>
-    </div>
-    <div class="cs-foot-meta">
-      <span class="cs-foot-hint">Enter kirim · Shift+Enter baris baru</span>
-      <span class="cs-model-badge" id="cs-model-badge">BMS CS</span>
-    </div>
-  </div>
-</div>
-
-<script>
-/* ════════════════════════════════════════════════════
-   BMS STUDIO — CS (Customer Service) AI Widget
-   Menggunakan semua model AI dari APP_CONFIG
-   Agent tidak menyebut nama model AI mereka.
-════════════════════════════════════════════════════ */
-
-/* ── Agent definitions ──────────────────────────── */
-/* Setiap agent punya nama "manusia", avatar, kepribadian,
-   dan dipetakan ke model AI tertentu secara diam-diam.   */
-const CS_AGENTS = [
-  {
-    id      : 'aria',
-    name    : 'Aria',
-    icon    : '👩‍💼',
-    role    : 'General Support',
-    color   : 'var(--accent)',
-    /* model internal — tidak pernah diekspos ke user */
-    _model  : 'claude',
-    _buildUrl: (text) =>
-      `https://api-nanzz.my.id/docs/api/ai/chat-gpt.php?text=${encodeURIComponent(text)}&model=claude`,
-    personality: `Kamu adalah Aria, customer service profesional dari BMS STUDIO — studio pengembangan Roblox premium.
-Tugasmu: membantu klien dengan pertanyaan seputar layanan, harga, portofolio, dan proses order.
-Jawab dengan ramah, singkat, dan profesional. Gunakan bahasa Indonesia yang natural dan friendly.
-Jangan pernah menyebut nama model AI, API, atau teknologi yang kamu gunakan.
-Jika ditanya siapa kamu: "Saya Aria, CS dari BMS STUDIO."
-Jika ditanya apakah kamu AI: "Saya tim support BMS STUDIO, siap membantu kamu! 😊"
-
-Info BMS STUDIO:
-- Layanan: Custom Scripts (mulai R$1.000), Game Features (mulai R$2.500), Asset Packages (mulai R$800), Full Game Builds (mulai R$15.000)
-- Tier: Starter (R$1.000), Pro (R$5.000), Enterprise (R$20.000)
-- Pengiriman: 1-21 hari tergantung tier
-- Order via: Discord (discord.gg/REPLACE)
-- Pengalaman: 5+ tahun, 200+ proyek, 98% kepuasan klien
-- Support: 24/7`,
-  },
-  {
-    id      : 'nova',
-    name    : 'Nova',
-    icon    : '🧑‍💻',
-    role    : 'Technical CS',
-    color   : 'var(--blue)',
-    _model  : 'chatgpt',
-    _buildUrl: (text) =>
-      `https://api-nanzz.my.id/docs/api/ai/chat-gpt.php?text=${encodeURIComponent(text)}&model=chatgpt`,
-    personality: `Kamu adalah Nova, technical customer service dari BMS STUDIO — studio dev Roblox elite.
-Kamu fokus pada pertanyaan teknikal: scripting Luau, sistem game, arsitektur, anti-cheat, dll.
-Jawab dengan detail teknis yang tepat tapi tetap mudah dipahami. Friendly dan helpful.
-Jangan pernah menyebut nama model AI, API, atau teknologi backend yang kamu gunakan.
-Jika ditanya siapa kamu: "Saya Nova, technical CS BMS STUDIO."
-Jika ditanya apakah kamu AI: "Saya bagian dari tim teknis BMS STUDIO. Ada yang bisa saya bantu? 🛠️"
-
-Info BMS STUDIO:
-- Stack: Luau/Roblox, server-side security, DataStore, RemoteEvents, anti-exploit
-- Layanan teknis: combat system, economy, NPC AI, inventory, anti-cheat, admin panel
-- Semua script: server-secure, optimized, documented
-- Support 100+ concurrent players
-- Order via Discord: discord.gg/REPLACE`,
-  },
-  {
-    id      : 'zara',
-    name    : 'Zara',
-    icon    : '💎',
-    role    : 'VIP & Enterprise',
-    color   : 'var(--purple)',
-    _model  : 'gemini',
-    _buildUrl: (text) =>
-      `https://api-nanzz.my.id/docs/api/ai/gemini.php?text=${encodeURIComponent(text)}`,
-    personality: `Kamu adalah Zara, enterprise account manager dari BMS STUDIO — studio Roblox premium.
-Kamu spesialis klien besar dan proyek enterprise/full game build.
-Jawab dengan elegan, profesional, dan menunjukkan nilai premium layanan BMS.
-Jangan pernah menyebut nama model AI, API, atau teknologi yang kamu gunakan.
-Jika ditanya siapa kamu: "Saya Zara, enterprise specialist BMS STUDIO."
-Jika ditanya apakah kamu AI: "Saya dedicated account manager BMS STUDIO. 💼"
-
-Info BMS STUDIO Enterprise:
-- Enterprise tier: mulai R$20.000, full game development
-- Dedicated dev team, unlimited revisions, 30-hari post-launch support
-- Pro tier: R$5.000, 100+ player optimized, priority support
-- Portofolio: Full RPG Game Build (R$25.000), Combat System (R$4.500), Economy System (R$3.200)
-- Timeline: 14-21 hari untuk full build
-- Order & konsultasi: discord.gg/REPLACE`,
-  },
-  {
-    id      : 'rex',
-    name    : 'Rex',
-    icon    : '⚡',
-    role    : 'Quick Support',
-    color   : 'var(--amber)',
-    _model  : 'deepseek',
-    _buildUrl: (text) =>
-      `https://api-nanzz.my.id/docs/api/ai/chat-gpt.php?text=${encodeURIComponent(text)}&model=deepseek`,
-    personality: `Kamu adalah Rex, quick support specialist dari BMS STUDIO.
-Kamu menjawab cepat, to-the-point, dan efisien. Tidak bertele-tele tapi tetap ramah.
-Jangan pernah menyebut nama model AI, API, atau teknologi yang kamu gunakan.
-Jika ditanya siapa kamu: "Saya Rex, quick support BMS STUDIO. Langsung aja! ⚡"
-Jika ditanya apakah kamu AI: "Saya tim support BMS. Mau tanya apa? ⚡"
-
-Info BMS STUDIO:
-- Scripts mulai R$1.000 | Features mulai R$2.500 | Full build mulai R$15.000
-- Delivery: 1-3 hari (starter), 3-7 hari (pro), 14-21 hari (enterprise)
-- Order: discord.gg/REPLACE
-- 200+ proyek selesai, 98% puas`,
-  },
-];
-
-/* ── Quick reply sets ──────────────────────────── */
-const CS_QUICK_REPLIES = {
-  default: [
-    'Berapa harga script?',
-    'Cara order?',
-    'Ada portofolio?',
-    'Berapa lama pengerjaan?',
-  ],
-  pricing: [
-    'Harga full game build?',
-    'Ada diskon?',
-    'Bisa custom budget?',
-    'Metode pembayaran?',
-  ],
-  order: [
-    'Langkah order?',
-    'Butuh brief apa?',
-    'Revisi berapa kali?',
-    'Ada garansi?',
-  ],
-  technical: [
-    'Support anti-cheat?',
-    'Bisa 100+ player?',
-    'Ada dokumentasi?',
-    'Script anti-exploit?',
-  ],
-};
-
-/* ── State ──────────────────────────────────────── */
-let csOpen       = false;
-let csActiveAgent= CS_AGENTS[0];
-let csHistory    = {}; // {agentId: [{role,content}]}
-let csTyping     = false;
-let csQuickSet   = 'default';
-
-/* ── Init ── */
-CS_AGENTS.forEach(a => { csHistory[a.id] = []; });
-
-/* ── Toggle panel ── */
-function toggleCS(){
-  csOpen = !csOpen;
-  const panel = document.getElementById('cs-panel');
-  const fab   = document.getElementById('cs-fab');
-  const iconChat  = document.getElementById('cs-icon-chat');
-  const iconClose = document.getElementById('cs-icon-close');
-
-  panel.classList.toggle('open', csOpen);
-  fab.classList.toggle('open', csOpen);
-  iconChat.style.display  = csOpen ? 'none'  : 'block';
-  iconClose.style.display = csOpen ? 'block' : 'none';
-
-  if(csOpen && document.getElementById('cs-messages').children.length === 0){
-    csRenderAgentTabs();
-    csShowWelcome();
-    csRenderQuickReplies('default');
-  }
-}
-
-/* ── Render agent tabs ── */
-function csRenderAgentTabs(){
-  const bar = document.getElementById('cs-agent-tabs');
-  bar.innerHTML = CS_AGENTS.map(a => `
-    <button class="cs-agent${a.id===csActiveAgent.id?' on':''}"
-            onclick="csSwitchAgent('${a.id}')"
-            title="${a.role}">
-      <div class="cs-agent-dot"></div>
-      <span class="cs-agent-icon">${a.icon}</span>
-      <span>${a.name}</span>
-    </button>
-  `).join('');
-}
-
-/* ── Switch agent ── */
-function csSwitchAgent(id){
-  csActiveAgent = CS_AGENTS.find(a=>a.id===id);
-  csRenderAgentTabs();
-  csRenderMessages();
-  csUpdateModelBadge();
-
-  // If no history for this agent, show welcome
-  if(csHistory[id].length === 0){
-    csShowWelcome();
-  }
-}
-
-/* ── Welcome message ── */
-function csShowWelcome(){
-  const a = csActiveAgent;
-  const welcomes = {
-    aria: `Halo! 👋 Saya **${a.name}** dari BMS STUDIO Support.\n\nAda yang bisa saya bantu? Tanya soal **harga**, **layanan**, **cara order**, atau hal lainnya seputar BMS STUDIO!`,
-    nova: `Hai! 🛠️ Saya **${a.name}**, technical CS BMS STUDIO.\n\nMau tanya soal **script Luau**, **sistem game**, **anti-cheat**, atau spec teknis lainnya? Saya siap bantu!`,
-    zara: `Selamat datang! 💎 Saya **${a.name}**, enterprise specialist BMS STUDIO.\n\nSaya handle klien dengan proyek besar dan full game build. Mari diskusikan **visi proyek** kamu!`,
-    rex : `Yo! ⚡ **${a.name}** di sini — quick support BMS STUDIO.\n\nLangsung aja, mau tanya apa? Saya jawab cepat!`,
-  };
-  const text = welcomes[a.id] || `Halo! Saya ${a.name} dari BMS STUDIO Support. Ada yang bisa dibantu?`;
-  csAppendMsg('bot', text, a);
-}
-
-/* ── Append message ── */
-function csAppendMsg(role, text, agent=null){
-  const wrap = document.getElementById('cs-messages');
-  const a    = agent || csActiveAgent;
-  const div  = document.createElement('div');
-  div.className = `cs-msg ${role}`;
-
-  if(role==='bot'){
-    div.innerHTML = `
-      <div class="cs-avatar" title="${a.name} — ${a.role}" style="font-size:.875rem">${a.icon}</div>
-      <div>
-        <span class="cs-sender">${a.name}</span>
-        <div class="cs-bubble">${csFormatText(text)}</div>
-      </div>`;
-  } else {
-    div.innerHTML = `<div class="cs-bubble">${csEscape(text)}</div>`;
-  }
-
-  wrap.appendChild(div);
-  wrap.scrollTop = wrap.scrollHeight;
-}
-
-/* ── Render all messages for current agent ── */
-function csRenderMessages(){
-  const wrap = document.getElementById('cs-messages');
-  wrap.innerHTML = '';
-  csHistory[csActiveAgent.id].forEach(m=>{
-    csAppendMsgFromHistory(m.role, m.content);
-  });
-}
-
-function csAppendMsgFromHistory(role, text){
-  const wrap = document.getElementById('cs-messages');
-  const a    = csActiveAgent;
-  const div  = document.createElement('div');
-  div.className = `cs-msg ${role}`;
-  if(role==='bot'){
-    div.innerHTML = `
-      <div class="cs-avatar" style="font-size:.875rem">${a.icon}</div>
-      <div>
-        <span class="cs-sender">${a.name}</span>
-        <div class="cs-bubble">${csFormatText(text)}</div>
-      </div>`;
-  } else {
-    div.innerHTML = `<div class="cs-bubble">${csEscape(text)}</div>`;
-  }
-  wrap.appendChild(div);
-  wrap.scrollTop = wrap.scrollHeight;
-}
-
-/* ── Typing indicator ── */
-function csShowTyping(){
-  const wrap = document.getElementById('cs-messages');
-  const div  = document.createElement('div');
-  div.className = 'cs-msg bot';
-  div.id = 'cs-typing-msg';
-  div.innerHTML = `
-    <div class="cs-avatar" style="font-size:.875rem">${csActiveAgent.icon}</div>
-    <div>
-      <span class="cs-sender">${csActiveAgent.name}</span>
-      <div class="cs-bubble" style="padding:.5rem .75rem">
-        <div class="cs-typing"><span></span><span></span><span></span></div>
-      </div>
-    </div>`;
-  wrap.appendChild(div);
-  wrap.scrollTop = wrap.scrollHeight;
-}
-function csHideTyping(){
-  const el = document.getElementById('cs-typing-msg');
-  if(el) el.remove();
-}
-
-/* ── Send message ── */
-async function csSend(){
-  const inp  = document.getElementById('cs-input');
-  const text = inp.value.trim();
-  if(!text || csTyping) return;
-
-  inp.value = '';
-  csAutoResize(inp);
-  csTyping  = true;
-  document.getElementById('cs-send').disabled = true;
-  document.getElementById('cs-quick').style.display = 'none';
-
-  // Add user message to history & UI
-  csHistory[csActiveAgent.id].push({role:'user', content:text});
-  csAppendMsg('user', text);
-
-  // Detect topic for quick replies
-  csDetectQuickSet(text);
-
-  // Show typing
-  csShowTyping();
-
-  try {
-  const agent = csActiveAgent;
-
-  // Gabung system prompt + pesan user
-  const fullPrompt = agent.personality + '\n\nUser: ' + text;
-
-  // Build URL pakai URLSearchParams biar aman
-  const baseUrl = 'https://api-nanzz.my.id/docs/api/ai/chat-gpt.php';
-  const params  = new URLSearchParams({
-    text : fullPrompt,
-    model: agent._model
-  });
-
-  // Khusus gemini pakai endpoint berbeda
-  let finalUrl;
-  if(agent._model === 'gemini'){
-    finalUrl = 'https://api-nanzz.my.id/docs/api/ai/gemini.php?' 
-               + new URLSearchParams({ text: fullPrompt }).toString();
-  } else {
-    finalUrl = baseUrl + '?' + params.toString();
-  }
-
-  console.log('[CS] Fetching:', finalUrl);
-
-  const res     = await fetch(finalUrl);
-  const rawText = await res.text();
-
-  console.log('[CS] Raw:', rawText);
-
-  let reply = '';
-  try {
-    const json = JSON.parse(rawText);
-    reply = csExtractReply(json);
-  } catch(e){
-    // Bukan JSON, pakai langsung
-    reply = rawText.trim();
-  }
-
-  // Kalau masih kosong
-  if(!reply || reply.length < 2){
-    reply = 'Hmm, coba ulangi pertanyaanmu ya! 😊';
-  }
-
-  csHideTyping();
-  csHistory[agent.id].push({ role:'bot', content:reply });
-  csAppendMsg('bot', reply, agent);
-
-} catch(err){
-  console.error('[CS] Error:', err);
-  csHideTyping();
-  const errMsg = 'Koneksi bermasalah sebentar. Coba lagi ya! 🙏';
-  csHistory[csActiveAgent.id].push({ role:'bot', content:errMsg });
-  csAppendMsg('bot', errMsg);
-}
-
-/* ── Extract reply — FINAL FIX ── */
-function csExtractReply(data){
-  if(!data) return '';
-
-  // ✅ FORMAT API-NANZZ: {"status":true,"result":{"model":"...","text":"..."}}
-  if(data.result && typeof data.result === 'object'){
-    if(typeof data.result.text    === 'string' && data.result.text.trim())
-      return data.result.text.trim();
-    if(typeof data.result.content === 'string' && data.result.content.trim())
-      return data.result.content.trim();
-    if(typeof data.result.message === 'string' && data.result.message.trim())
-      return data.result.message.trim();
-    if(typeof data.result.reply   === 'string' && data.result.reply.trim())
-      return data.result.reply.trim();
-    if(typeof data.result.answer  === 'string' && data.result.answer.trim())
-      return data.result.answer.trim();
-    // Fallback: ambil value string pertama dari object result
-    for(const key of Object.keys(data.result)){
-      if(typeof data.result[key] === 'string' && data.result[key].trim().length > 2)
-        return data.result[key].trim();
-    }
-  }
-
-  // Format: result langsung string
-  if(typeof data.result === 'string' && data.result.trim())
-    return data.result.trim();
-
-  // Format lain sebagai fallback
-  if(typeof data.response === 'string' && data.response.trim()) return data.response.trim();
-  if(typeof data.message  === 'string' && data.message.trim())  return data.message.trim();
-  if(typeof data.text     === 'string' && data.text.trim())     return data.text.trim();
-  if(typeof data.answer   === 'string' && data.answer.trim())   return data.answer.trim();
-  if(typeof data.output   === 'string' && data.output.trim())   return data.output.trim();
-  if(typeof data.content  === 'string' && data.content.trim())  return data.content.trim();
-  if(typeof data.reply    === 'string' && data.reply.trim())    return data.reply.trim();
-
-  // OpenAI format
-  if(Array.isArray(data.choices) && data.choices[0]?.message?.content)
-    return data.choices[0].message.content.trim();
-
-  // data.data nested
-  if(data.data && typeof data.data === 'object'){
-    if(typeof data.data.text    === 'string' && data.data.text.trim())    return data.data.text.trim();
-    if(typeof data.data.content === 'string' && data.data.content.trim()) return data.data.content.trim();
-    if(typeof data.data.message === 'string' && data.data.message.trim()) return data.data.message.trim();
-  }
-  if(typeof data.data === 'string' && data.data.trim()) return data.data.trim();
-
-  // Last resort: cari key string pertama yang panjang
-  for(const key of Object.keys(data)){
-    if(typeof data[key] === 'string' && data[key].trim().length > 5)
-      return data[key].trim();
-  }
-
-  return '';
-}
-
-/* ── Quick send from quick reply button ── */
-function csQuickSend(text){
-  document.getElementById('cs-input').value = text;
-  csSend();
-}
-
-/* ── Detect topic ── */
-function csDetectQuickSet(text){
-  const t = text.toLowerCase();
-  if(t.match(/harga|biaya|bayar|budget|murah|mahal|cost|price/)) csQuickSet='pricing';
-  else if(t.match(/order|pesan|beli|cara|proses|brief|revisi/))  csQuickSet='order';
-  else if(t.match(/script|teknis|anti|cheat|player|luau|server/))csQuickSet='technical';
-  else csQuickSet='default';
-}
-
-/* ── Quick replies render ── */
-function csRenderQuickReplies(set='default'){
-  const items = CS_QUICK_REPLIES[set] || CS_QUICK_REPLIES.default;
-  const el    = document.getElementById('cs-quick');
-  el.style.display = 'flex';
-  el.innerHTML     = items.map(q=>
-    `<button class="cs-qr" onclick="csQuickSend('${q}')">${q}</button>`
-  ).join('');
-}
-
-/* ── Format text (basic markdown) ── */
-function csFormatText(text){
-  return csEscape(text)
-    .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g,'<em>$1</em>')
-    .replace(/`(.*?)`/g,'<code>$1</code>')
-    .replace(/\n/g,'<br>');
-}
-
-/* ── Escape HTML ── */
-function csEscape(str){
-  return String(str)
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;');
-}
-
-/* ── Auto resize textarea ── */
-function csAutoResize(el){
-  el.style.height='auto';
-  el.style.height=Math.min(el.scrollHeight,80)+'px';
-}
-
-/* ── Enter to send ── */
-function csKeyDown(e){
-  if(e.key==='Enter'&&!e.shiftKey){
-    e.preventDefault();
-    csSend();
-  }
-}
-
-/* ── Update model badge (shows agent role, not model name) ── */
-function csUpdateModelBadge(){
-  document.getElementById('cs-model-badge').textContent =
-    `${csActiveAgent.icon} ${csActiveAgent.name} · ${csActiveAgent.role}`;
-}
-
-/* ── Status text rotation ── */
-const CS_STATUS_TEXTS = [
-  'Team online · Biasanya membalas dalam beberapa detik',
-  'BMS STUDIO Support · 24/7 aktif',
-  '4 agent online · Siap membantu',
-  'Rata-rata respon: < 5 detik',
-];
-let csStatusIdx = 0;
-setInterval(()=>{
-  if(!csOpen) return;
-  csStatusIdx = (csStatusIdx+1) % CS_STATUS_TEXTS.length;
-  const el = document.getElementById('cs-status-text');
-  if(el) el.textContent = CS_STATUS_TEXTS[csStatusIdx];
-}, 5000);
-
-/* ── Init badge ── */
-csUpdateModelBadge();
-</script>
+@media(max-width:500px){#cs-panel{width:calc(100vw - 2rem);right:1rem;left:1rem;bottom:5rem}#cs-fab{bottom:1.25rem;right:1.25rem}}
 </style>
 </head>
 <body>
 
-<!-- CUSTOM CURSOR -->
+<!-- CURSOR -->
 <div id="cur"></div>
 <div id="cur-trail"></div>
 
+<!-- BACKGROUND -->
 <div class="bg-root">
   <div class="bg-dots"></div>
   <div class="bg-glow bg-g1"></div>
@@ -1519,14 +637,12 @@ csUpdateModelBadge();
         <div class="logo-sub">Elite Roblox Development</div>
       </div>
     </div>
-
     <ul class="nav-links">
       <li><a data-p="home" class="on" onclick="go('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
       <li><a data-p="work" onclick="go('work')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>Portfolio</a></li>
       <li><a data-p="services" onclick="go('services')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Services</a></li>
       <li><a data-p="about" onclick="go('about')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>About</a></li>
     </ul>
-
     <div class="nav-r">
       <a href="https://discord.gg/REPLACE" target="_blank" class="nav-dc">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 13.717 13.717 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
@@ -1537,7 +653,6 @@ csUpdateModelBadge();
         Order Now
       </a>
     </div>
-
     <button class="burger" id="burger" onclick="togMob()">
       <svg id="im" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
       <svg id="ix" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -1557,9 +672,8 @@ csUpdateModelBadge();
   </div>
 </nav>
 
-<!-- ═══ HOME ═══ -->
+<!-- HOME PAGE -->
 <div id="page-home" class="page on">
-
 <section id="hero">
   <div class="wrap">
     <div class="hero-grid">
@@ -1570,7 +684,7 @@ csUpdateModelBadge();
           <span class="hero-title-accent">STUDIO</span>
           <span class="hero-mono">Elite Roblox Development</span>
         </h1>
-        <p class="hero-desc rv d2">Premium scripts, game features, asset packages and full game builds. Engineered for performance, delivered with precision. Trusted by top Roblox developers.</p>
+        <p class="hero-desc rv d2">Premium scripts, game features, asset packages and full game builds. Engineered for performance, delivered with precision.</p>
         <div class="hero-cta rv d3">
           <button class="btn btn-primary btn-lg" onclick="go('work')">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
@@ -1611,169 +725,67 @@ csUpdateModelBadge();
       <p class="sub rv d2">Full-spectrum Roblox development. From single components to complete game ecosystems.</p>
     </div>
     <div class="feat-grid">
-      <div class="card card-h card-line feat rv">
-        <div class="feat-num">01 &mdash; Script</div>
-        <div class="feat-ic fi1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <div class="feat-t">Custom Scripts</div>
-        <p class="feat-d">High-performance Luau scripting. Server-secure, anti-exploit, and fully documented.</p>
-        <span class="feat-p">from R$1,000</span>
-      </div>
-      <div class="card card-h card-line feat rv d1">
-        <div class="feat-num">02 &mdash; Feature</div>
-        <div class="feat-ic fi2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <div class="feat-t">Game Features</div>
-        <p class="feat-d">Combat, inventory, economy systems. Complete and optimized for 100+ concurrent players.</p>
-        <span class="feat-p">from R$2,500</span>
-      </div>
-      <div class="card card-h card-line feat rv d2">
-        <div class="feat-num">03 &mdash; Asset</div>
-        <div class="feat-ic fi3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
-        <div class="feat-t">Asset Packages</div>
-        <p class="feat-d">Curated UI kits, model packs and textures optimized for Roblox rendering.</p>
-        <span class="feat-p">from R$800</span>
-      </div>
-      <div class="card card-h card-line feat rv d3">
-        <div class="feat-num">04 &mdash; Build</div>
-        <div class="feat-ic fi4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></svg></div>
-        <div class="feat-t">Full Game Builds</div>
-        <p class="feat-d">End-to-end development. Architecture, coding, and deployment all included.</p>
-        <span class="feat-p">from R$15,000</span>
-      </div>
+      <div class="card card-h card-line feat rv"><div class="feat-num">01 — Script</div><div class="feat-ic fi1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="feat-t">Custom Scripts</div><p class="feat-d">High-performance Luau scripting. Server-secure, anti-exploit, and fully documented.</p><span class="feat-p">from R$1,000</span></div>
+      <div class="card card-h card-line feat rv d1"><div class="feat-num">02 — Feature</div><div class="feat-ic fi2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="feat-t">Game Features</div><p class="feat-d">Combat, inventory, economy systems. Complete and optimized for 100+ concurrent players.</p><span class="feat-p">from R$2,500</span></div>
+      <div class="card card-h card-line feat rv d2"><div class="feat-num">03 — Asset</div><div class="feat-ic fi3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="feat-t">Asset Packages</div><p class="feat-d">Curated UI kits, model packs and textures optimized for Roblox rendering.</p><span class="feat-p">from R$800</span></div>
+      <div class="card card-h card-line feat rv d3"><div class="feat-num">04 — Build</div><div class="feat-ic fi4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></svg></div><div class="feat-t">Full Game Builds</div><p class="feat-d">End-to-end development. Architecture, coding, and deployment all included.</p><span class="feat-p">from R$15,000</span></div>
     </div>
-    <div style="text-align:center;margin-top:2.25rem">
-      <button class="btn btn-ghost btn-lg" onclick="go('work')">
-        View Portfolio
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </button>
-    </div>
+    <div style="text-align:center;margin-top:2.25rem"><button class="btn btn-ghost btn-lg" onclick="go('work')">View Portfolio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button></div>
   </div>
 </section>
 
-<section style="padding:0 0 6rem">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat"><span class="stat-v">200+</span><span class="stat-l">Projects</span></div>
-      <div class="stat"><span class="stat-v">98%</span><span class="stat-l">Satisfaction</span></div>
-      <div class="stat"><span class="stat-v">50+</span><span class="stat-l">Clients</span></div>
-      <div class="stat"><span class="stat-v">5yr</span><span class="stat-l">Experience</span></div>
+<section style="padding:0 0 6rem"><div class="wrap"><div class="stats"><div class="stat"><span class="stat-v">200+</span><span class="stat-l">Projects</span></div><div class="stat"><span class="stat-v">98%</span><span class="stat-l">Satisfaction</span></div><div class="stat"><span class="stat-v">50+</span><span class="stat-l">Clients</span></div><div class="stat"><span class="stat-v">5yr</span><span class="stat-l">Experience</span></div></div></div></section>
+
+<section style="padding:0 0 6rem"><div class="wrap">
+  <div class="cta">
+    <div class="tag rv" style="margin-bottom:1.125rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Get Started</div>
+    <h2 class="h2 rv d1" style="margin-bottom:.75rem">Ready to Build Something<br><span class="accent">Extraordinary?</span></h2>
+    <p class="rv d2" style="color:var(--text2);font-size:1rem;line-height:1.75;max-width:440px;margin:0 auto">Open a ticket on Discord and our team will respond within hours.</p>
+    <div class="cta-btns rv d3">
+      <a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-discord btn-lg"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 13.717 13.717 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>Open a Ticket</a>
+      <button class="btn btn-ghost btn-lg" onclick="go('work')">Browse Portfolio</button>
     </div>
   </div>
-</section>
-
-<section style="padding:0 0 6rem">
-  <div class="wrap">
-    <div class="cta">
-      <div class="tag rv" style="margin-bottom:1.125rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Get Started</div>
-      <h2 class="h2 rv d1" style="margin-bottom:.75rem">Ready to Build Something<br><span class="accent">Extraordinary?</span></h2>
-      <p class="rv d2" style="color:var(--text2);font-size:1rem;line-height:1.75;max-width:440px;margin:0 auto">Open a ticket on Discord and our team will respond within hours.</p>
-      <div class="cta-btns rv d3">
-        <a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-discord btn-lg">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 13.717 13.717 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-          Open a Ticket
-        </a>
-        <button class="btn btn-ghost btn-lg" onclick="go('work')">Browse Portfolio</button>
-      </div>
-    </div>
-  </div>
-</section>
-
+</div></section>
 </div>
 
-<!-- ═══ PORTFOLIO ═══ -->
+<!-- PORTFOLIO PAGE -->
 <div id="page-work" class="page">
-  <div class="ptop">
-    <div class="wrap">
-      <div class="tag rv" style="margin-bottom:.75rem">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
-        Portfolio
-      </div>
-      <h1 class="h2 rv d1">Our <span class="accent">Work</span></h1>
-      <p class="ptop-desc rv d2">Selected projects showcasing our expertise in Roblox development.</p>
-    </div>
-  </div>
+  <div class="ptop"><div class="wrap">
+    <div class="tag rv" style="margin-bottom:.75rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>Portfolio</div>
+    <h1 class="h2 rv d1">Our <span class="accent">Work</span></h1>
+    <p class="ptop-desc rv d2">Selected projects showcasing our expertise in Roblox development.</p>
+  </div></div>
   <div class="wrap" style="padding-bottom:6rem">
     <div class="filter-bar" id="filter-bar"></div>
     <div class="port-grid" id="pgrid"></div>
   </div>
 </div>
 
-<!-- ═══ SERVICES ═══ -->
+<!-- SERVICES PAGE -->
 <div id="page-services" class="page">
-  <div class="ptop">
-    <div class="wrap">
-      <div class="tag rv" style="margin-bottom:.75rem">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-        Services
-      </div>
-      <h1 class="h2 rv d1">What We <span class="accent">Offer</span></h1>
-      <p class="ptop-desc rv d2">From single scripts to full game builds — pick what fits your vision.</p>
-    </div>
-  </div>
+  <div class="ptop"><div class="wrap">
+    <div class="tag rv" style="margin-bottom:.75rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Services</div>
+    <h1 class="h2 rv d1">What We <span class="accent">Offer</span></h1>
+    <p class="ptop-desc rv d2">From single scripts to full game builds.</p>
+  </div></div>
   <div class="wrap" style="padding-bottom:6rem">
     <div class="srv-grid" id="sgrid"></div>
-    <div style="margin-bottom:3rem">
-      <div class="tag" style="margin-bottom:1.25rem">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        Pricing Tiers
-      </div>
-    </div>
+    <div style="margin-bottom:3rem"><div class="tag" style="margin-bottom:1.25rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Pricing Tiers</div></div>
     <div class="tiers">
-      <div class="card tier rv">
-        <div class="tier-name">Starter</div>
-        <div class="tier-price">R$1,000</div>
-        <div class="tier-ps">Starting price / project</div>
-        <div class="tier-div"></div>
-        <div class="tier-list">
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Single script or module</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Server-side security</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Basic documentation</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 revision rounds</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1-3 day delivery</div>
-        </div>
-        <a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-ghost btn-md btn-full" style="border-radius:10px">Order via Discord</a>
-      </div>
-      <div class="card tier ft rv d1">
-        <div class="tier-name">Pro</div>
-        <div class="tier-price">R$5,000</div>
-        <div class="tier-ps">Starting price / project</div>
-        <div class="tier-div"></div>
-        <div class="tier-list">
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Complete feature systems</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>100+ player optimized</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full documentation</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5 revision rounds</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Priority support</div>
-        </div>
-        <a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-primary btn-md btn-full" style="border-radius:10px">Order via Discord</a>
-      </div>
-      <div class="card tier rv d2">
-        <div class="tier-name">Enterprise</div>
-        <div class="tier-price">R$20,000</div>
-        <div class="tier-ps">Starting price / project</div>
-        <div class="tier-div"></div>
-        <div class="tier-list">
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full game development</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dedicated dev team</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Unlimited revisions</div>
-          <div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>30-day post-launch support</div>
-        </div>
-        <a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-ghost btn-md btn-full" style="border-radius:10px">Order via Discord</a>
-      </div>
+      <div class="card tier rv"><div class="tier-name">Starter</div><div class="tier-price">R$1,000</div><div class="tier-ps">Starting price / project</div><div class="tier-div"></div><div class="tier-list"><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Single script or module</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Server-side security</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Basic documentation</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 revision rounds</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1-3 day delivery</div></div><a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-ghost btn-md btn-full" style="border-radius:10px">Order via Discord</a></div>
+      <div class="card tier ft rv d1"><div class="tier-name">Pro</div><div class="tier-price">R$5,000</div><div class="tier-ps">Starting price / project</div><div class="tier-div"></div><div class="tier-list"><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Complete feature systems</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>100+ player optimized</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full documentation</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5 revision rounds</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Priority support</div></div><a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-primary btn-md btn-full" style="border-radius:10px">Order via Discord</a></div>
+      <div class="card tier rv d2"><div class="tier-name">Enterprise</div><div class="tier-price">R$20,000</div><div class="tier-ps">Starting price / project</div><div class="tier-div"></div><div class="tier-list"><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full game development</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dedicated dev team</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Unlimited revisions</div><div class="tier-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>30-day post-launch support</div></div><a href="https://discord.gg/REPLACE" target="_blank" class="btn btn-ghost btn-md btn-full" style="border-radius:10px">Order via Discord</a></div>
     </div>
   </div>
 </div>
 
-<!-- ═══ ABOUT ═══ -->
+<!-- ABOUT PAGE -->
 <div id="page-about" class="page">
-  <div class="ptop">
-    <div class="wrap">
-      <div class="tag rv" style="margin-bottom:.75rem">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        Who We Are
-      </div>
-      <h1 class="h2 rv d1">About <span class="accent">BMS STUDIO</span></h1>
-    </div>
-  </div>
+  <div class="ptop"><div class="wrap">
+    <div class="tag rv" style="margin-bottom:.75rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>Who We Are</div>
+    <h1 class="h2 rv d1">About <span class="accent">BMS STUDIO</span></h1>
+  </div></div>
   <div class="wrap" style="padding-bottom:6rem">
     <div class="about-grid">
       <div class="rv">
@@ -1783,12 +795,12 @@ csUpdateModelBadge();
             <div><span class="tp">$ </span><span class="tc">cat mission.txt</span></div>
             <span class="to">BMS Studio is an elite Roblox dev studio</span>
             <span class="to">specializing in scripts, features,</span>
-            <span class="to">assets and full game builds.</span><br/>
+            <span class="to">assets and full game builds.</span><br>
             <div><span class="tp">$ </span><span class="tc">./status --check</span></div>
             <span class="to"><span class="tok">[OK]</span> Experience: 5+ years</span>
             <span class="to"><span class="tok">[OK]</span> Projects: 200+ delivered</span>
             <span class="to"><span class="tok">[OK]</span> Satisfaction: 98%</span>
-            <span class="to"><span class="tok">[OK]</span> Support: 24/7 active</span><br/>
+            <span class="to"><span class="tok">[OK]</span> Support: 24/7 active</span><br>
             <div><span class="tp">$ </span><span class="tcur"></span></div>
           </div>
         </div>
@@ -1819,473 +831,583 @@ csUpdateModelBadge();
 </div>
 
 <!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-in">
-      <div style="display:flex;align-items:center;gap:.75rem">
-        <div style="width:26px;height:26px;border-radius:7px;background:rgba(75,232,192,0.06);border:1px solid rgba(75,232,192,0.1);display:flex;align-items:center;justify-content:center;cursor:none" onclick="go('home')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" width="12" height="12"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+<footer><div class="wrap"><div class="foot-in">
+  <div style="display:flex;align-items:center;gap:.75rem">
+    <div style="width:26px;height:26px;border-radius:7px;background:rgba(75,232,192,0.06);border:1px solid rgba(75,232,192,0.1);display:flex;align-items:center;justify-content:center;cursor:none" onclick="go('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" width="12" height="12"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+    </div>
+    <span class="foot-copy">&copy; <span id="yr"></span> BMS STUDIO</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+    <div class="foot-links"><button class="foot-link" onclick="go('work')">Portfolio</button><button class="foot-link" onclick="go('services')">Services</button><button class="foot-link" onclick="go('about')">About</button></div>
+    <div class="foot-status"><div class="foot-led"></div>All systems operational</div>
+  </div>
+</div></div></footer>
+
+<!-- CS WIDGET HTML -->
+<button id="cs-fab" onclick="toggleCS()">
+  <div id="cs-fab-dot"></div>
+  <svg id="cs-icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:#06080e">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+  <svg id="cs-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none;color:var(--accent)">
+    <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+  </svg>
+</button>
+
+<div id="cs-panel">
+  <div id="cs-header">
+    <div class="cs-header-top">
+      <div class="cs-brand">
+        <div class="cs-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-        <span class="foot-copy">&copy; <span id="yr"></span> BMS STUDIO</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
-        <div class="foot-links">
-          <button class="foot-link" onclick="go('work')">Portfolio</button>
-          <button class="foot-link" onclick="go('services')">Services</button>
-          <button class="foot-link" onclick="go('about')">About</button>
+        <div>
+          <div class="cs-brand-name">BMS <span>SUPPORT</span></div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.4rem;color:var(--text3);letter-spacing:.15em;text-transform:uppercase">Customer Service</div>
         </div>
-        <div class="foot-status"><div class="foot-led"></div>All systems operational</div>
       </div>
+      <button class="cs-close" onclick="toggleCS()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="cs-agents" id="cs-agent-tabs"></div>
+    <div class="cs-status">
+      <div class="cs-status-dot"></div>
+      <span id="cs-status-text">Team online · Biasanya membalas dalam beberapa detik</span>
     </div>
   </div>
-</footer>
+  <div id="cs-messages"></div>
+  <div id="cs-quick"></div>
+  <div id="cs-foot">
+    <div class="cs-input-wrap">
+      <textarea id="cs-input" placeholder="Tulis pesan kamu..." rows="1" onkeydown="csKeyDown(event)" oninput="csAutoResize(this)"></textarea>
+      <button id="cs-send" onclick="csSend()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+    <div class="cs-foot-meta">
+      <span class="cs-foot-hint">Enter kirim · Shift+Enter baris baru</span>
+      <span class="cs-model-badge" id="cs-model-badge">BMS CS</span>
+    </div>
+  </div>
+</div>
 
-<!-- ══════════════════════════════════════════════
-     CONFIG.JS — Edit everything here
-══════════════════════════════════════════════ -->
+<!-- ALL SCRIPTS IN ONE BLOCK -->
 <script>
-/* ═══════════════════════════════════════════════════
-   ██████╗  ██████╗ ███╗   ██╗███████╗██╗ ██████╗
-   ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
-   ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
-   ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
-   ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
-    ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
-   BMS STUDIO — config.js
-   Edit SITE, PORTFOLIO, and SERVICES below.
-═══════════════════════════════════════════════════ */
-
-/* ──────────────────────────────────────────────
-   SITE CONFIG
-────────────────────────────────────────────── */
-const SITE = {
-  name        : 'BMS STUDIO',
-  tagline     : 'Elite Roblox Development',
-  discordUrl  : 'https://discord.gg/REPLACE',   // ← your Discord invite
-  faviconUrl  : 'https://domain-kamu.com/logo-bms.png', // ← your favicon
-  stats: {
-    projects   : '200+',
-    satisfaction: '98%',
-    clients    : '50+',
-    experience : '5yr',
-  },
+/* ════════════════════════════════
+   CONFIG
+════════════════════════════════ */
+var SITE = {
+  discordUrl: 'https://discord.gg/REPLACE'
 };
 
-/* ──────────────────────────────────────────────
-   PORTFOLIO ITEMS
-   img: URL to image (leave '' for auto placeholder)
-   cat: scripts | features | assets | builds | plugins
-────────────────────────────────────────────── */
-const PORTFOLIO = [
-  {
-    name    : 'Advanced Combat System',
-    desc    : 'Full combat framework with hitbox detection, combo system, animation states and network replication.',
-    price   : 4500,
-    cat     : 'features',
-    tags    : ['combat','pvp','multiplayer'],
-    img     : '', // e.g. 'https://i.imgur.com/xxx.png'
-    featured: true,
-    time    : '2-4 days',
-  },
-  {
-    name    : 'Economy & Currency System',
-    desc    : 'Complete in-game economy with multiple currencies, transactions, leaderboards and daily rewards.',
-    price   : 3200,
-    cat     : 'scripts',
-    tags    : ['economy','currency','datastore'],
-    img     : '',
-    featured: true,
-    time    : '1-3 days',
-  },
-  {
-    name    : 'Inventory UI Kit',
-    desc    : 'Sleek responsive inventory UI with grid layout, item tooltips, drag-and-drop and equipment slots.',
-    price   : 1800,
-    cat     : 'assets',
-    tags    : ['ui','inventory','gui'],
-    img     : '',
-    featured: false,
-    time    : '1-2 days',
-  },
-  {
-    name    : 'Full RPG Game Build',
-    desc    : 'Complete RPG foundation: quests, classes, skill trees, world map, NPC system and persistent progression.',
-    price   : 25000,
-    cat     : 'builds',
-    tags    : ['rpg','fullgame','architecture'],
-    img     : '',
-    featured: true,
-    time    : '14-21 days',
-  },
-  {
-    name    : 'Anti-Cheat Module',
-    desc    : 'Robust server-side anti-cheat with speed, fly, teleport and exploit detection. Auto banning included.',
-    price   : 2800,
-    cat     : 'scripts',
-    tags    : ['security','anticheat','server'],
-    img     : '',
-    featured: false,
-    time    : '1-2 days',
-  },
-  {
-    name    : 'Admin Panel System',
-    desc    : 'In-game admin panel with player management, server controls, teleport tools and permission levels.',
-    price   : 1500,
-    cat     : 'plugins',
-    tags    : ['admin','tools','moderation'],
-    img     : '',
-    featured: false,
-    time    : '1-2 days',
-  },
-  {
-    name    : 'NPC AI Framework',
-    desc    : 'Smart NPC system with patrol, chase, attack states. Fully configurable behavior trees.',
-    price   : 3500,
-    cat     : 'features',
-    tags    : ['npc','ai','behavior'],
-    img     : '',
-    featured: false,
-    time    : '3-5 days',
-  },
-  {
-    name    : 'DataStore Pro',
-    desc    : 'Bulletproof data saving with auto-retry, backup system, session locking and migration support.',
-    price   : 1200,
-    cat     : 'scripts',
-    tags    : ['data','persistence','backend'],
-    img     : '',
-    featured: false,
-    time    : '1-2 days',
-  },
+var PORTFOLIO = [
+  {name:'Advanced Combat System',desc:'Full combat framework with hitbox detection, combo system, animation states and network replication.',price:4500,cat:'features',tags:['combat','pvp','multiplayer'],img:'',featured:true,time:'2-4 days'},
+  {name:'Economy & Currency System',desc:'Complete in-game economy with multiple currencies, transactions, leaderboards and daily rewards.',price:3200,cat:'scripts',tags:['economy','currency','datastore'],img:'',featured:true,time:'1-3 days'},
+  {name:'Inventory UI Kit',desc:'Sleek responsive inventory UI with grid layout, item tooltips, drag-and-drop and equipment slots.',price:1800,cat:'assets',tags:['ui','inventory','gui'],img:'',featured:false,time:'1-2 days'},
+  {name:'Full RPG Game Build',desc:'Complete RPG foundation: quests, classes, skill trees, world map, NPC system and persistent progression.',price:25000,cat:'builds',tags:['rpg','fullgame','architecture'],img:'',featured:true,time:'14-21 days'},
+  {name:'Anti-Cheat Module',desc:'Robust server-side anti-cheat with speed, fly, teleport and exploit detection.',price:2800,cat:'scripts',tags:['security','anticheat','server'],img:'',featured:false,time:'1-2 days'},
+  {name:'Admin Panel System',desc:'In-game admin panel with player management, server controls and permission levels.',price:1500,cat:'plugins',tags:['admin','tools','moderation'],img:'',featured:false,time:'1-2 days'},
+  {name:'NPC AI Framework',desc:'Smart NPC system with patrol, chase, attack states and configurable behavior trees.',price:3500,cat:'features',tags:['npc','ai','behavior'],img:'',featured:false,time:'3-5 days'},
+  {name:'DataStore Pro',desc:'Bulletproof data saving with auto-retry, backup system, session locking and migration support.',price:1200,cat:'scripts',tags:['data','persistence','backend'],img:'',featured:false,time:'1-2 days'}
 ];
 
-/* ──────────────────────────────────────────────
-   SERVICES
-   img: URL to image (leave '' for auto placeholder)
-   color: accent color for placeholder icon
-   iconSvg: SVG path content for placeholder icon
-────────────────────────────────────────────── */
-const SERVICES = [
-  {
-    name    : 'Custom Scripting',
-    desc    : 'Tailored Luau scripts built to your exact spec. Server-secure, optimized, documented and ready to drop in.',
-    fromPrice: 1000,
-    img     : '', // e.g. 'https://i.imgur.com/xxx.png'
-    color   : 'var(--accent)',
-    bgColor : 'rgba(75,232,192,0.06)',
-    bdColor : 'rgba(75,232,192,0.1)',
-    iconSvg : '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',
-  },
-  {
-    name    : 'Game Feature Systems',
-    desc    : 'Combat, inventory, economy, leaderboards — complete gameplay systems built for scale and performance.',
-    fromPrice: 2500,
-    img     : '',
-    color   : 'var(--purple)',
-    bgColor : 'rgba(124,108,240,0.06)',
-    bdColor : 'rgba(124,108,240,0.1)',
-    iconSvg : '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
-  },
-  {
-    name    : 'UI / Asset Design',
-    desc    : 'Polished Roblox UIs, icon sets, model packs and texture sheets. Pixel-perfect and Roblox renderer–ready.',
-    fromPrice: 800,
-    img     : '',
-    color   : 'var(--green)',
-    bgColor : 'rgba(52,211,153,0.06)',
-    bdColor : 'rgba(52,211,153,0.1)',
-    iconSvg : '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>',
-  },
-  {
-    name    : 'Full Game Development',
-    desc    : 'End-to-end game builds. Architecture design, scripting, QA, and deployment. We handle everything.',
-    fromPrice: 15000,
-    img     : '',
-    color   : 'var(--amber)',
-    bgColor : 'rgba(251,191,36,0.06)',
-    bdColor : 'rgba(251,191,36,0.1)',
-    iconSvg : '<rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/>',
-  },
-  {
-    name    : 'Security & Anti-Cheat',
-    desc    : 'Harden your game against exploiters. Detection systems, auto-banning, rate-limiting and server validation.',
-    fromPrice: 1500,
-    img     : '',
-    color   : '#f87171',
-    bgColor : 'rgba(248,113,113,0.06)',
-    bdColor : 'rgba(248,113,113,0.1)',
-    iconSvg : '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
-  },
-  {
-    name    : 'Plugin & Tool Dev',
-    desc    : 'Custom Roblox Studio plugins, admin panels, moderation tools and internal dev utilities.',
-    fromPrice: 900,
-    img     : '',
-    color   : 'var(--blue)',
-    bgColor : 'rgba(78,160,248,0.06)',
-    bdColor : 'rgba(78,160,248,0.1)',
-    iconSvg : '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
-  },
+var SERVICES = [
+  {name:'Custom Scripting',desc:'Tailored Luau scripts built to your exact spec. Server-secure, optimized, documented.',fromPrice:1000,img:'',color:'var(--accent)',bgColor:'rgba(75,232,192,0.06)',bdColor:'rgba(75,232,192,0.1)',iconSvg:'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>'},
+  {name:'Game Feature Systems',desc:'Combat, inventory, economy — complete gameplay systems built for scale.',fromPrice:2500,img:'',color:'var(--purple)',bgColor:'rgba(124,108,240,0.06)',bdColor:'rgba(124,108,240,0.1)',iconSvg:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>'},
+  {name:'UI / Asset Design',desc:'Polished Roblox UIs, icon sets, model packs and texture sheets.',fromPrice:800,img:'',color:'var(--green)',bgColor:'rgba(52,211,153,0.06)',bdColor:'rgba(52,211,153,0.1)',iconSvg:'<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>'},
+  {name:'Full Game Development',desc:'End-to-end game builds. Architecture, scripting, QA, and deployment.',fromPrice:15000,img:'',color:'var(--amber)',bgColor:'rgba(251,191,36,0.06)',bdColor:'rgba(251,191,36,0.1)',iconSvg:'<rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/>'},
+  {name:'Security & Anti-Cheat',desc:'Harden your game against exploiters. Detection, auto-banning, server validation.',fromPrice:1500,img:'',color:'#f87171',bgColor:'rgba(248,113,113,0.06)',bdColor:'rgba(248,113,113,0.1)',iconSvg:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'},
+  {name:'Plugin & Tool Dev',desc:'Custom Roblox Studio plugins, admin panels and internal dev utilities.',fromPrice:900,img:'',color:'var(--blue)',bgColor:'rgba(78,160,248,0.06)',bdColor:'rgba(78,160,248,0.1)',iconSvg:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>'}
 ];
 
-/* ──────────────────────────────────────────────
-   TICKER LABELS
-────────────────────────────────────────────── */
-const TICKS = [
-  'Custom Scripts','Game Features','UI Systems','Combat Engines',
-  'Economy Systems','Inventory Frameworks','Full Game Builds',
-  'Asset Packages','Anti-Cheat','Admin Panels','NPC Systems',
-  'Leaderboards','DataStore Solutions','Plugin Dev',
-];
-</script>
+var TICKS = ['Custom Scripts','Game Features','UI Systems','Combat Engines','Economy Systems','Inventory Frameworks','Full Game Builds','Asset Packages','Anti-Cheat','Admin Panels','NPC Systems','Leaderboards','DataStore Solutions','Plugin Dev'];
 
-<!-- ══════════════════════════════════════════════
-     APP LOGIC (do not edit below unless you know what you're doing)
-══════════════════════════════════════════════ -->
-<script>
-/* ── Apply favicon from config ── */
-(function(){
-  const lnk = document.querySelector('link[rel="icon"]')
-             || Object.assign(document.createElement('link'),{rel:'icon',type:'image/png'});
-  lnk.href = SITE.faviconUrl;
-  document.head.appendChild(lnk);
-  const touch = document.querySelector('link[rel="apple-touch-icon"]')
-               || Object.assign(document.createElement('link'),{rel:'apple-touch-icon'});
-  touch.href = SITE.faviconUrl;
-  document.head.appendChild(touch);
-})();
+var catBadge = {scripts:'ba',features:'bp',assets:'by',builds:'by',plugins:'bg',default:'bd'};
+var catLabel  = {scripts:'Scripts',features:'Features',assets:'Assets',builds:'Builds',plugins:'Plugins'};
 
-/* ── Badge color map ── */
-const catBadge = {
-  scripts :'ba', features:'bp', assets:'by',
-  builds  :'by', plugins :'bg', default:'bd',
-};
-
-/* ── Category labels ── */
-const catLabel = {
-  scripts :'Scripts',  features:'Features', assets:'Assets',
-  builds  :'Builds',   plugins :'Plugins',
-};
-
-/* ── NAV ── */
-function go(p){
-  document.querySelectorAll('.page').forEach(x=>x.classList.remove('on'));
+/* ════════════════════════════════
+   NAV
+════════════════════════════════ */
+function go(p) {
+  document.querySelectorAll('.page').forEach(function(x){x.classList.remove('on');});
   document.getElementById('page-'+p).classList.add('on');
-  document.querySelectorAll('[data-p]').forEach(a=>a.classList.toggle('on',a.dataset.p===p));
+  document.querySelectorAll('[data-p]').forEach(function(a){a.classList.toggle('on', a.dataset.p===p);});
   window.scrollTo({top:0,behavior:'smooth'});
   if(p==='work')     renderPortfolio('all');
   if(p==='services') renderServices();
 }
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('stuck',window.scrollY>20);
+window.addEventListener('scroll', function(){
+  document.getElementById('nav').classList.toggle('stuck', window.scrollY > 20);
 });
-function togMob(){
-  const m=document.getElementById('mob'),on=m.classList.toggle('on');
-  document.getElementById('im').style.display=on?'none':'block';
-  document.getElementById('ix').style.display=on?'block':'none';
+function togMob() {
+  var m  = document.getElementById('mob');
+  var on = m.classList.toggle('on');
+  document.getElementById('im').style.display = on ? 'none'  : 'block';
+  document.getElementById('ix').style.display = on ? 'block' : 'none';
 }
-function cM(){
+function cM() {
   document.getElementById('mob').classList.remove('on');
-  document.getElementById('im').style.display='block';
-  document.getElementById('ix').style.display='none';
+  document.getElementById('im').style.display = 'block';
+  document.getElementById('ix').style.display = 'none';
 }
 
-/* ── TICKER ── */
-function buildTicker(){
-  const s=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="10" height="10"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`;
-  document.getElementById('ticker').innerHTML=[...TICKS,...TICKS]
-    .map((t,i)=>`<span class="ticker-item">${s} ${t}</span>${i<TICKS.length*2-1?'<span class="ticker-sep">&middot;</span>':''}`)
-    .join('');
+/* ════════════════════════════════
+   TICKER
+════════════════════════════════ */
+function buildTicker() {
+  var s = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="10" height="10"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>';
+  var all = TICKS.concat(TICKS);
+  document.getElementById('ticker').innerHTML = all.map(function(t,i){
+    return '<span class="ticker-item">'+s+' '+t+'</span>'+(i<all.length-1?'<span class="ticker-sep">&middot;</span>':'');
+  }).join('');
 }
 
-/* ── FILTER BAR ── */
-let activeFilter = 'all';
-function buildFilters(){
-  const cats = ['all',...new Set(PORTFOLIO.map(p=>p.cat))];
-  const bar  = document.getElementById('filter-bar');
-  bar.innerHTML = cats.map(c=>`
-    <button class="f-btn${c===activeFilter?' on':''}" onclick="filterPort('${c}')">
-      ${c==='all'?'All':catLabel[c]||c}
-    </button>`).join('');
+/* ════════════════════════════════
+   PORTFOLIO
+════════════════════════════════ */
+var activeFilter = 'all';
+
+function buildFilters() {
+  var cats = ['all'];
+  PORTFOLIO.forEach(function(p){ if(cats.indexOf(p.cat)===-1) cats.push(p.cat); });
+  var bar = document.getElementById('filter-bar');
+  bar.innerHTML = cats.map(function(c){
+    return '<button class="f-btn'+(c===activeFilter?' on':'')+'" onclick="filterPort(\''+c+'\')">'+
+      (c==='all'?'All':(catLabel[c]||c))+'</button>';
+  }).join('');
 }
-function filterPort(cat){
-  activeFilter=cat;
+
+function filterPort(cat) {
+  activeFilter = cat;
   renderPortfolio(cat);
 }
-function renderPortfolio(cat='all'){
+
+function renderPortfolio(cat) {
   buildFilters();
-  const items = cat==='all' ? PORTFOLIO : PORTFOLIO.filter(p=>p.cat===cat);
-  document.getElementById('pgrid').innerHTML = items.map((p,i)=>{
-    const usd   = (p.price*.0035).toFixed(2);
-    const bc    = catBadge[p.cat]||catBadge.default;
-    const dl    = Math.min(i*.06,.4);
-    const imgHtml = p.img
-      ? `<img src="${p.img}" alt="${p.name}" loading="lazy"/>`
-      : `<div class="port-img-placeholder">
-           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-           <span class="port-img-placeholder-label">${p.cat}</span>
-         </div>`;
-    return `
-    <div class="port-card" style="animation:rv .5s ${dl}s both"
-         onmousemove="tlt(event,this)" onmouseleave="utlt(this)">
-      <div class="port-img">
-        ${imgHtml}
-        <div class="port-img-ov"></div>
-        <div class="port-img-badges">
-          <div class="port-badges">
-            <span class="bdg ${bc}">${p.cat}</span>
-            ${p.featured?`<span class="bdg by"><svg viewBox="0 0 24 24" fill="currentColor" width="7" height="7"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Featured</span>`:''}
-          </div>
-          <span class="bdg bg">Available</span>
-        </div>
-      </div>
-      <div class="port-body">
-        <div class="port-name">${p.name}</div>
-        <p class="port-desc">${p.desc}</p>
-        ${p.time?`<div style="font-family:'JetBrains Mono',monospace;font-size:.5625rem;color:var(--text3);display:flex;align-items:center;gap:4px">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="9" height="9"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>${p.time}</div>`:''}
-        <div class="port-tags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div>
-        <div class="port-foot">
-          <div>
-            <span class="port-price">R$${p.price.toLocaleString()}</span>
-            <div class="port-usd">~$${usd} USD</div>
-          </div>
-          <a href="${SITE.discordUrl}" target="_blank" class="btn-order">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Order
-          </a>
-        </div>
-      </div>
-    </div>`;
+  var items = cat==='all' ? PORTFOLIO : PORTFOLIO.filter(function(p){return p.cat===cat;});
+  document.getElementById('pgrid').innerHTML = items.map(function(p,i){
+    var usd = (p.price*0.0035).toFixed(2);
+    var bc  = catBadge[p.cat] || catBadge.default;
+    var dl  = Math.min(i*0.06, 0.4);
+    var imgHtml = p.img
+      ? '<img src="'+p.img+'" alt="'+p.name+'" loading="lazy"/>'
+      : '<div class="port-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><span class="port-img-placeholder-label">'+p.cat+'</span></div>';
+    return '<div class="port-card" style="animation:rv .5s '+dl+'s both" onmousemove="tlt(event,this)" onmouseleave="utlt(this)">'+
+      '<div class="port-img">'+imgHtml+'<div class="port-img-ov"></div>'+
+      '<div class="port-img-badges"><div class="port-badges"><span class="bdg '+bc+'">'+p.cat+'</span>'+
+      (p.featured?'<span class="bdg by"><svg viewBox="0 0 24 24" fill="currentColor" width="7" height="7"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Featured</span>':'')+
+      '</div><span class="bdg bg">Available</span></div></div>'+
+      '<div class="port-body"><div class="port-name">'+p.name+'</div><p class="port-desc">'+p.desc+'</p>'+
+      (p.time?'<div style="font-family:\'JetBrains Mono\',monospace;font-size:.5625rem;color:var(--text3);display:flex;align-items:center;gap:4px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="9" height="9"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'+p.time+'</div>':'')+
+      '<div class="port-tags">'+p.tags.map(function(t){return '<span class="ptag">'+t+'</span>';}).join('')+'</div>'+
+      '<div class="port-foot"><div><span class="port-price">R$'+p.price.toLocaleString()+'</span><div class="port-usd">~$'+usd+' USD</div></div>'+
+      '<a href="'+SITE.discordUrl+'" target="_blank" class="btn-order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Order</a>'+
+      '</div></div></div>';
   }).join('');
 }
 
-/* ── SERVICES ── */
-function renderServices(){
-  document.getElementById('sgrid').innerHTML = SERVICES.map((s,i)=>{
-    const dl = Math.min(i*.07,.42);
-    const imgHtml = s.img
-      ? `<img src="${s.img}" alt="${s.name}" loading="lazy"/>
-         <div class="srv-img-ov"></div>`
-      : `<div class="srv-img-ph">
-           <div class="srv-img-ic" style="background:${s.bgColor};border:1px solid ${s.bdColor}">
-             <svg viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.75" width="24" height="24">${s.iconSvg}</svg>
-           </div>
-         </div>
-         <div class="srv-img-ov"></div>`;
-    return `
-    <div class="srv-card" style="animation:rv .5s ${dl}s both">
-      <div class="srv-img">${imgHtml}</div>
-      <div class="srv-body">
-        <div class="srv-name">${s.name}</div>
-        <p class="srv-desc">${s.desc}</p>
-        <div class="srv-meta">
-          <div>
-            <div class="srv-from">Starting from</div>
-            <div class="srv-price">R$${s.fromPrice.toLocaleString()}</div>
-          </div>
-          <a href="${SITE.discordUrl}" target="_blank" class="btn-order">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Order
-          </a>
-        </div>
-      </div>
-    </div>`;
+/* ════════════════════════════════
+   SERVICES
+════════════════════════════════ */
+function renderServices() {
+  document.getElementById('sgrid').innerHTML = SERVICES.map(function(s,i){
+    var dl = Math.min(i*0.07, 0.42);
+    var imgHtml = s.img
+      ? '<img src="'+s.img+'" alt="'+s.name+'" loading="lazy"/><div class="srv-img-ov"></div>'
+      : '<div class="srv-img-ph"><div class="srv-img-ic" style="background:'+s.bgColor+';border:1px solid '+s.bdColor+'"><svg viewBox="0 0 24 24" fill="none" stroke="'+s.color+'" stroke-width="1.75" width="24" height="24">'+s.iconSvg+'</svg></div></div><div class="srv-img-ov"></div>';
+    return '<div class="srv-card" style="animation:rv .5s '+dl+'s both">'+
+      '<div class="srv-img">'+imgHtml+'</div>'+
+      '<div class="srv-body"><div class="srv-name">'+s.name+'</div><p class="srv-desc">'+s.desc+'</p>'+
+      '<div class="srv-meta"><div><div class="srv-from">Starting from</div><div class="srv-price">R$'+s.fromPrice.toLocaleString()+'</div></div>'+
+      '<a href="'+SITE.discordUrl+'" target="_blank" class="btn-order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Order</a>'+
+      '</div></div></div>';
   }).join('');
 }
 
-/* ── 3D TILT ── */
-function tlt(e,el){
-  const r=el.getBoundingClientRect();
-  const x=(e.clientX-r.left)/r.width-.5;
-  const y=(e.clientY-r.top)/r.height-.5;
-  el.style.transition='transform .05s';
-  el.style.transform=`perspective(800px) rotateX(${-y*8}deg) rotateY(${x*8}deg) translateY(-5px) scale(1.005)`;
+/* ════════════════════════════════
+   3D TILT
+════════════════════════════════ */
+function tlt(e, el) {
+  var r = el.getBoundingClientRect();
+  var x = (e.clientX-r.left)/r.width  - 0.5;
+  var y = (e.clientY-r.top )/r.height - 0.5;
+  el.style.transition = 'transform .05s';
+  el.style.transform  = 'perspective(800px) rotateX('+(-y*8)+'deg) rotateY('+(x*8)+'deg) translateY(-5px) scale(1.005)';
 }
-function utlt(el){
-  el.style.transition='transform .5s cubic-bezier(.34,1.56,.64,1)';
-  el.style.transform='';
-  setTimeout(()=>el.style.transition='',500);
+function utlt(el) {
+  el.style.transition = 'transform .5s cubic-bezier(.34,1.56,.64,1)';
+  el.style.transform  = '';
+  setTimeout(function(){el.style.transition='';}, 500);
 }
 
-/* ── CUSTOM CURSOR ── */
+/* ════════════════════════════════
+   CUSTOM CURSOR
+════════════════════════════════ */
 (function(){
-  const cur   = document.getElementById('cur');
-  const trail = document.getElementById('cur-trail');
-  let mx=0,my=0,tx=0,ty=0;
-  let sparkTimer=0;
+  var cur   = document.getElementById('cur');
+  var trail = document.getElementById('cur-trail');
+  var mx=0, my=0, tx=0, ty=0, sparkTimer=0;
 
-  document.addEventListener('mousemove',e=>{
-    mx=e.clientX; my=e.clientY;
-    cur.style.left=mx+'px'; cur.style.top=my+'px';
-
-    // Sparks every ~80ms
-    const now=Date.now();
-    if(now-sparkTimer>80){
-      sparkTimer=now;
-      spawnSpark(mx,my);
-    }
+  document.addEventListener('mousemove', function(e){
+    mx = e.clientX; my = e.clientY;
+    cur.style.left = mx+'px';
+    cur.style.top  = my+'px';
+    var now = Date.now();
+    if(now - sparkTimer > 80){ sparkTimer=now; spawnSpark(mx,my,false); }
   });
 
-  // Lagging trail
   function animTrail(){
-    tx+=(mx-tx)*.12;
-    ty+=(my-ty)*.12;
-    trail.style.left=tx+'px';
-    trail.style.top =ty+'px';
+    tx += (mx-tx)*0.12;
+    ty += (my-ty)*0.12;
+    trail.style.left = tx+'px';
+    trail.style.top  = ty+'px';
     requestAnimationFrame(animTrail);
   }
   animTrail();
 
-  // Hover effect on interactive elements
-  document.addEventListener('mouseover',e=>{
-    if(e.target.matches('a,button,[onclick],.port-card,.srv-card,.card-h,.btn-order,.f-btn,.foot-link')){
+  document.addEventListener('mouseover', function(e){
+    if(e.target.matches('a,button,[onclick],.port-card,.srv-card,.card-h,.btn-order,.f-btn,.foot-link,.cs-agent,.cs-qr,.cs-close,#cs-fab,#cs-send'))
       cur.classList.add('hov');
-    }
   });
-  document.addEventListener('mouseout',e=>{
-    if(e.target.matches('a,button,[onclick],.port-card,.srv-card,.card-h,.btn-order,.f-btn,.foot-link')){
+  document.addEventListener('mouseout', function(e){
+    if(e.target.matches('a,button,[onclick],.port-card,.srv-card,.card-h,.btn-order,.f-btn,.foot-link,.cs-agent,.cs-qr,.cs-close,#cs-fab,#cs-send'))
       cur.classList.remove('hov');
-    }
   });
 
-  // Click burst
-  document.addEventListener('click',e=>{
-    spawnRing(e.clientX,e.clientY);
-    for(let i=0;i<8;i++) spawnSpark(e.clientX,e.clientY,true);
+  document.addEventListener('click', function(e){
+    spawnRing(e.clientX, e.clientY);
+    for(var i=0;i<8;i++) spawnSpark(e.clientX, e.clientY, true);
   });
 
-  function spawnSpark(x,y,burst=false){
-    const el=document.createElement('div');
-    el.className='cur-spark';
-    const size = burst ? (Math.random()*5+3) : (Math.random()*4+2);
-    const angle = Math.random()*Math.PI*2;
-    const dist  = burst ? (Math.random()*40+15) : (Math.random()*12+5);
-    const dx = Math.cos(angle)*dist;
-    const dy = Math.sin(angle)*dist;
-    const colors=['#4be8c0','#7c6cf0','#4ea0f8','#34d399','#fff'];
-    el.style.cssText=`
-      left:${x}px;top:${y}px;
-      width:${size}px;height:${size}px;
-      background:${colors[Math.floor(Math.random()*colors.length)]};
-      --dx:${dx}px;--dy:${dy}px;
-      box-shadow:0 0 ${size*2}px ${colors[0]};
-    `;
+  function spawnSpark(x,y,burst){
+    var el    = document.createElement('div');
+    el.className = 'cur-spark';
+    var size  = burst ? (Math.random()*5+3) : (Math.random()*4+2);
+    var angle = Math.random()*Math.PI*2;
+    var dist  = burst ? (Math.random()*40+15) : (Math.random()*12+5);
+    var colors= ['#4be8c0','#7c6cf0','#4ea0f8','#34d399','#fff'];
+    el.style.cssText = 'left:'+x+'px;top:'+y+'px;width:'+size+'px;height:'+size+'px;background:'+colors[Math.floor(Math.random()*colors.length)]+';--dx:'+(Math.cos(angle)*dist)+'px;--dy:'+(Math.sin(angle)*dist)+'px;box-shadow:0 0 '+(size*2)+'px #4be8c0;';
     document.body.appendChild(el);
-    el.addEventListener('animationend',()=>el.remove());
+    el.addEventListener('animationend', function(){el.remove();});
   }
-
   function spawnRing(x,y){
-    const el=document.createElement('div');
-    el.className='cur-ring';
-    el.style.left=x+'px';
-    el.style.top=y+'px';
+    var el = document.createElement('div');
+    el.className = 'cur-ring';
+    el.style.left = x+'px'; el.style.top = y+'px';
     document.body.appendChild(el);
-    el.addEventListener('animationend',()=>el.remove());
+    el.addEventListener('animationend', function(){el.remove();});
   }
 })();
 
-/* ── INIT ── */
-document.getElementById('yr').textContent=new Date().getFullYear();
+/* ════════════════════════════════
+   CS WIDGET
+════════════════════════════════ */
+var CS_AGENTS = [
+  {
+    id:'aria', name:'Aria', icon:'👩‍💼', role:'General Support',
+    _model:'claude',
+    personality:'Kamu adalah Aria, customer service profesional dari BMS STUDIO — studio pengembangan Roblox premium. Tugasmu membantu klien dengan pertanyaan seputar layanan, harga, portofolio, dan proses order. Jawab dengan ramah, singkat, dan profesional dalam bahasa Indonesia yang natural. PENTING: Jangan pernah menyebut nama model AI, API, atau teknologi yang kamu gunakan. Jika ditanya siapa kamu jawab: Saya Aria, CS dari BMS STUDIO. Jika ditanya apakah AI jawab: Saya tim support BMS STUDIO, siap membantu! Info: Custom Scripts mulai R$1.000, Game Features mulai R$2.500, Asset Packages mulai R$800, Full Game Builds mulai R$15.000. Tier Starter R$1.000, Pro R$5.000, Enterprise R$20.000. Order via Discord. Pengalaman 5 tahun, 200+ proyek, 98% kepuasan.'
+  },
+  {
+    id:'nova', name:'Nova', icon:'🧑‍💻', role:'Technical CS',
+    _model:'chatgpt',
+    personality:'Kamu adalah Nova, technical customer service dari BMS STUDIO. Fokus pada pertanyaan teknikal: scripting Luau, sistem game, arsitektur, anti-cheat. Jawab dengan detail teknis yang tepat tapi mudah dipahami. PENTING: Jangan pernah menyebut nama model AI atau teknologi backend. Jika ditanya siapa kamu: Saya Nova, technical CS BMS STUDIO. Stack: Luau, server-side security, DataStore, RemoteEvents, anti-exploit. Support 100+ concurrent players. Order via Discord.'
+  },
+  {
+    id:'zara', name:'Zara', icon:'💎', role:'VIP & Enterprise',
+    _model:'gemini',
+    personality:'Kamu adalah Zara, enterprise account manager dari BMS STUDIO. Spesialis klien besar dan proyek enterprise. Jawab dengan elegan dan profesional. PENTING: Jangan pernah menyebut nama model AI. Jika ditanya siapa kamu: Saya Zara, enterprise specialist BMS STUDIO. Enterprise tier mulai R$20.000, full game development, dedicated team, unlimited revisions, 30-hari post-launch support. Timeline 14-21 hari untuk full build.'
+  },
+  {
+    id:'rex', name:'Rex', icon:'⚡', role:'Quick Support',
+    _model:'deepseek',
+    personality:'Kamu adalah Rex, quick support dari BMS STUDIO. Jawab cepat dan to-the-point tapi tetap ramah. PENTING: Jangan sebut nama model AI. Jika ditanya siapa: Saya Rex, quick support BMS STUDIO. Scripts mulai R$1.000, Features mulai R$2.500, Full build mulai R$15.000. Delivery 1-3 hari starter, 14-21 hari enterprise. Order Discord. 200+ proyek, 98% puas.'
+  }
+];
+
+var CS_QUICK = {
+  default  : ['Berapa harga script?','Cara order?','Ada portofolio?','Berapa lama pengerjaan?'],
+  pricing  : ['Harga full game build?','Ada diskon?','Bisa custom budget?','Metode pembayaran?'],
+  order    : ['Langkah order?','Butuh brief apa?','Revisi berapa kali?','Ada garansi?'],
+  technical: ['Support anti-cheat?','Bisa 100+ player?','Ada dokumentasi?','Script anti-exploit?']
+};
+
+var csOpen        = false;
+var csActiveAgent = CS_AGENTS[0];
+var csHistory     = {};
+var csTyping      = false;
+var csQuickSet    = 'default';
+var csInited      = false;
+
+CS_AGENTS.forEach(function(a){ csHistory[a.id] = []; });
+
+function toggleCS() {
+  csOpen = !csOpen;
+  var panel     = document.getElementById('cs-panel');
+  var fab       = document.getElementById('cs-fab');
+  var iconChat  = document.getElementById('cs-icon-chat');
+  var iconClose = document.getElementById('cs-icon-close');
+
+  panel.classList.toggle('open', csOpen);
+  fab.classList.toggle('open', csOpen);
+  iconChat.style.display  = csOpen ? 'none'  : 'block';
+  iconClose.style.display = csOpen ? 'block' : 'none';
+
+  if(csOpen && !csInited) {
+    csInited = true;
+    csRenderAgentTabs();
+    csShowWelcome();
+    csRenderQuickReplies('default');
+  }
+}
+
+function csRenderAgentTabs() {
+  var bar = document.getElementById('cs-agent-tabs');
+  bar.innerHTML = CS_AGENTS.map(function(a){
+    return '<button class="cs-agent'+(a.id===csActiveAgent.id?' on':'')+'" onclick="csSwitchAgent(\''+a.id+'\')" title="'+a.role+'">'+
+      '<div class="cs-agent-dot"></div>'+
+      '<span class="cs-agent-icon">'+a.icon+'</span>'+
+      '<span>'+a.name+'</span>'+
+      '</button>';
+  }).join('');
+}
+
+function csSwitchAgent(id) {
+  csActiveAgent = CS_AGENTS.filter(function(a){return a.id===id;})[0];
+  csRenderAgentTabs();
+  csRenderMessages();
+  csUpdateModelBadge();
+  if(csHistory[id].length === 0) csShowWelcome();
+}
+
+function csShowWelcome() {
+  var welcomes = {
+    aria: 'Halo! 👋 Saya **Aria** dari BMS STUDIO Support.\n\nAda yang bisa saya bantu? Tanya soal **harga**, **layanan**, **cara order**, atau hal lainnya!',
+    nova: 'Hai! 🛠️ Saya **Nova**, technical CS BMS STUDIO.\n\nMau tanya soal **script Luau**, **sistem game**, atau spec teknis lainnya? Siap bantu!',
+    zara: 'Selamat datang! 💎 Saya **Zara**, enterprise specialist BMS STUDIO.\n\nMari diskusikan **visi proyek** kamu!',
+    rex : 'Yo! ⚡ **Rex** di sini — quick support BMS STUDIO.\n\nLangsung aja, mau tanya apa?'
+  };
+  var text = welcomes[csActiveAgent.id] || 'Halo! Saya '+csActiveAgent.name+' dari BMS STUDIO Support.';
+  csHistory[csActiveAgent.id].push({role:'bot', content:text});
+  csAppendMsg('bot', text);
+}
+
+function csAppendMsg(role, text) {
+  var wrap = document.getElementById('cs-messages');
+  var a    = csActiveAgent;
+  var div  = document.createElement('div');
+  div.className = 'cs-msg '+role;
+  if(role==='bot'){
+    div.innerHTML =
+      '<div class="cs-avatar">'+a.icon+'</div>'+
+      '<div><span class="cs-sender">'+a.name+'</span>'+
+      '<div class="cs-bubble">'+csFormatText(text)+'</div></div>';
+  } else {
+    div.innerHTML = '<div class="cs-bubble">'+csEscape(text)+'</div>';
+  }
+  wrap.appendChild(div);
+  wrap.scrollTop = wrap.scrollHeight;
+}
+
+function csRenderMessages() {
+  var wrap = document.getElementById('cs-messages');
+  wrap.innerHTML = '';
+  csHistory[csActiveAgent.id].forEach(function(m){
+    var div = document.createElement('div');
+    div.className = 'cs-msg '+m.role;
+    if(m.role==='bot'){
+      div.innerHTML =
+        '<div class="cs-avatar">'+csActiveAgent.icon+'</div>'+
+        '<div><span class="cs-sender">'+csActiveAgent.name+'</span>'+
+        '<div class="cs-bubble">'+csFormatText(m.content)+'</div></div>';
+    } else {
+      div.innerHTML = '<div class="cs-bubble">'+csEscape(m.content)+'</div>';
+    }
+    wrap.appendChild(div);
+  });
+  wrap.scrollTop = wrap.scrollHeight;
+}
+
+function csShowTyping() {
+  var wrap = document.getElementById('cs-messages');
+  var div  = document.createElement('div');
+  div.className = 'cs-msg bot';
+  div.id = 'cs-typing-msg';
+  div.innerHTML =
+    '<div class="cs-avatar">'+csActiveAgent.icon+'</div>'+
+    '<div><span class="cs-sender">'+csActiveAgent.name+'</span>'+
+    '<div class="cs-bubble" style="padding:.5rem .75rem">'+
+    '<div class="cs-typing"><span></span><span></span><span></span></div></div></div>';
+  wrap.appendChild(div);
+  wrap.scrollTop = wrap.scrollHeight;
+}
+
+function csHideTyping() {
+  var el = document.getElementById('cs-typing-msg');
+  if(el) el.remove();
+}
+
+function csSend() {
+  var inp  = document.getElementById('cs-input');
+  var text = inp.value.trim();
+  if(!text || csTyping) return;
+
+  inp.value = '';
+  csAutoResize(inp);
+  csTyping = true;
+  document.getElementById('cs-send').disabled = true;
+  document.getElementById('cs-quick').style.display = 'none';
+
+  csHistory[csActiveAgent.id].push({role:'user', content:text});
+  csAppendMsg('user', text);
+  csDetectQuickSet(text);
+  csShowTyping();
+
+  var agent      = csActiveAgent;
+  var fullPrompt = agent.personality + '\n\nUser: ' + text;
+
+  var baseUrl, finalUrl;
+  if(agent._model === 'gemini'){
+    finalUrl = 'https://api-nanzz.my.id/docs/api/ai/gemini.php?text=' + encodeURIComponent(fullPrompt);
+  } else {
+    finalUrl = 'https://api-nanzz.my.id/docs/api/ai/chat-gpt.php?text=' + encodeURIComponent(fullPrompt) + '&model=' + agent._model;
+  }
+
+  fetch(finalUrl)
+    .then(function(res){ return res.text(); })
+    .then(function(rawText){
+      var reply = '';
+      try {
+        var json = JSON.parse(rawText);
+        reply = csExtractReply(json);
+      } catch(e){
+        reply = rawText.trim();
+      }
+      if(!reply || reply.length < 2) reply = 'Hmm, coba ulangi pertanyaanmu ya! 😊';
+      csHideTyping();
+      csHistory[agent.id].push({role:'bot', content:reply});
+      csAppendMsg('bot', reply);
+    })
+    .catch(function(err){
+      console.error('[CS]', err);
+      csHideTyping();
+      var msg = 'Koneksi bermasalah sebentar. Coba lagi ya! 🙏';
+      csHistory[agent.id].push({role:'bot', content:msg});
+      csAppendMsg('bot', msg);
+    })
+    .finally(function(){
+      csTyping = false;
+      document.getElementById('cs-send').disabled = false;
+      csRenderQuickReplies(csQuickSet);
+    });
+}
+
+function csExtractReply(data){
+  if(!data) return '';
+  /* api-nanzz format: {status:true, result:{model:"...", text:"..."}} */
+  if(data.result && typeof data.result === 'object'){
+    if(typeof data.result.text    === 'string' && data.result.text.trim())    return data.result.text.trim();
+    if(typeof data.result.content === 'string' && data.result.content.trim()) return data.result.content.trim();
+    if(typeof data.result.message === 'string' && data.result.message.trim()) return data.result.message.trim();
+    for(var k in data.result){
+      if(typeof data.result[k]==='string' && data.result[k].trim().length>2) return data.result[k].trim();
+    }
+  }
+  if(typeof data.result   ==='string' && data.result.trim())   return data.result.trim();
+  if(typeof data.response ==='string' && data.response.trim()) return data.response.trim();
+  if(typeof data.message  ==='string' && data.message.trim())  return data.message.trim();
+  if(typeof data.text     ==='string' && data.text.trim())     return data.text.trim();
+  if(typeof data.answer   ==='string' && data.answer.trim())   return data.answer.trim();
+  if(typeof data.output   ==='string' && data.output.trim())   return data.output.trim();
+  if(typeof data.content  ==='string' && data.content.trim())  return data.content.trim();
+  if(typeof data.reply    ==='string' && data.reply.trim())    return data.reply.trim();
+  if(Array.isArray(data.choices) && data.choices[0] && data.choices[0].message && data.choices[0].message.content)
+    return data.choices[0].message.content.trim();
+  if(data.data && typeof data.data==='object'){
+    if(typeof data.data.text    ==='string' && data.data.text.trim())    return data.data.text.trim();
+    if(typeof data.data.content ==='string' && data.data.content.trim()) return data.data.content.trim();
+    if(typeof data.data.message ==='string' && data.data.message.trim()) return data.data.message.trim();
+  }
+  if(typeof data.data==='string' && data.data.trim()) return data.data.trim();
+  if(typeof data==='string' && data.trim()) return data.trim();
+  for(var key in data){
+    if(typeof data[key]==='string' && data[key].trim().length>5) return data[key].trim();
+  }
+  return '';
+}
+
+function csQuickSend(text){
+  document.getElementById('cs-input').value = text;
+  csSend();
+}
+
+function csDetectQuickSet(text){
+  var t = text.toLowerCase();
+  if(/harga|biaya|bayar|budget|murah|mahal|cost|price/.test(t))   csQuickSet='pricing';
+  else if(/order|pesan|beli|cara|proses|brief|revisi/.test(t))    csQuickSet='order';
+  else if(/script|teknis|anti|cheat|player|luau|server/.test(t))  csQuickSet='technical';
+  else csQuickSet='default';
+}
+
+function csRenderQuickReplies(set){
+  var items = CS_QUICK[set] || CS_QUICK.default;
+  var el    = document.getElementById('cs-quick');
+  el.style.display = 'flex';
+  el.innerHTML = items.map(function(q){
+    return '<button class="cs-qr" onclick="csQuickSend(\''+q.replace(/'/g,"\\'")+'\')">' + q + '</button>';
+  }).join('');
+}
+
+function csFormatText(text){
+  return csEscape(text)
+    .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g,'<em>$1</em>')
+    .replace(/`(.*?)`/g,'<code>$1</code>')
+    .replace(/\n/g,'<br>');
+}
+
+function csEscape(str){
+  return String(str)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function csAutoResize(el){
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 80)+'px';
+}
+
+function csKeyDown(e){
+  if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); csSend(); }
+}
+
+function csUpdateModelBadge(){
+  var el = document.getElementById('cs-model-badge');
+  if(el) el.textContent = csActiveAgent.icon+' '+csActiveAgent.name+' · '+csActiveAgent.role;
+}
+
+var CS_STATUS_TEXTS = [
+  'Team online · Biasanya membalas dalam beberapa detik',
+  'BMS STUDIO Support · 24/7 aktif',
+  '4 agent online · Siap membantu',
+  'Rata-rata respon: < 5 detik'
+];
+var csStatusIdx = 0;
+setInterval(function(){
+  if(!csOpen) return;
+  csStatusIdx = (csStatusIdx+1) % CS_STATUS_TEXTS.length;
+  var el = document.getElementById('cs-status-text');
+  if(el) el.textContent = CS_STATUS_TEXTS[csStatusIdx];
+}, 5000);
+
+/* ════════════════════════════════
+   INIT
+════════════════════════════════ */
+document.getElementById('yr').textContent = new Date().getFullYear();
 buildTicker();
+csUpdateModelBadge();
 </script>
 </body>
 </html>
